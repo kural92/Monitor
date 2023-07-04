@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="118.089" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Medicine flow to check and place the order" name="Search the any of the Product and add into the Cart and Place the Order" time="117.948">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;div class=&quot;text&quot;&gt;...&lt;/div&gt; is not clickable at point (1132, 45). Other element would receive the click: &lt;iframe title=&quot;notification-frame-22a357429&quot; name=&quot;notification-frame-22a357429&quot; id=&quot;webklipper-publisher-widget-container-notification-frame&quot; frameborder=&quot;0&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; style=&quot;display: block; position: fixed; z-index: 16776272; left: -1000px; top: -1000px; width: 100%; visibility: visible; overflow: visible; height: 61.5185px; transform: translate(1000px, 1000px);&quot; data-notification-layout-id=&quot;~fg00aad&quot; data-notification-layout-name=&quot;undefined&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b824c64e1567caa650782ee1662a1cea, clickElement {id=8859D495D9E92B39365E22ED1AB851F1_element_372}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f...}, goog:chromeOptions: {debuggerAddress: localhost:9988}, pageLoadStrategy: normal, platformName: any, proxy: Proxy(), se:cdp: ws://localhost:9988/devtool..., se:cdpVersion: 114.0.5735.199, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on any (b824c64e1567caa650782ee1662a1cea)] -&gt; xpath: //div[@class='text']]
+Session ID: b824c64e1567caa650782ee1662a1cea">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="text">...</div> is not clickable at point (1132, 45). Other element would receive the click: <iframe title="notification-frame-22a357429" name="notification-frame-22a357429" id="webklipper-publisher-widget-container-notification-frame" frameborder="0" marginheight="0" marginwidth="0" style="display: block; position: fixed; z-index: 16776272; left: -1000px; top: -1000px; width: 100%; visibility: visible; overflow: visible; height: 61.5185px; transform: translate(1000px, 1000px);" data-notification-layout-id="~fg00aad" data-notification-layout-name="undefined"></iframe>
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b824c64e1567caa650782ee1662a1cea, clickElement {id=8859D495D9E92B39365E22ED1AB851F1_element_372}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f...}, goog:chromeOptions: {debuggerAddress: localhost:9988}, pageLoadStrategy: normal, platformName: any, proxy: Proxy(), se:cdp: ws://localhost:9988/devtool..., se:cdpVersion: 114.0.5735.199, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on any (b824c64e1567caa650782ee1662a1cea)] -> xpath: //div[@class='text']]
+Session ID: b824c64e1567caa650782ee1662a1cea
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at stepDefinition.MedicineFlow1.click_on_cart_page_proceed_the_product_to_order_page(MedicineFlow1.java:135)
+	at ✽.Click on cart page proceed the Product to Order Page(file:///C:/Users/Netmeds/eclipse-workspace/Monitor/src/test/resources/M1.feature:12)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Check Already Logged in Browser was Opened............................passed
+When Clear the Cart and  Search the Product.................................passed
+And click on Add to the cart and add the product............................passed
+And Click on cart page proceed the Product to Order Page....................failed
+Then From Order page choose delivery adress and click on Pay................skipped
+And check Payment page was landed...........................................skipped
+And Verify the payment status of the order..................................skipped
+]]></system-out>
+</testcase>
+</testsuite>

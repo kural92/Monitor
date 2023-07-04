@@ -1,0 +1,10 @@
+pages\SearchResultPage.class
+pages\OrderReviewPage.class
+pages\PaymentPage.class
+Page_Manager\PageObjectManager.class
+pages\LabTest.class
+pages\ProductPage.class
+pages\LoginPage.class
+pages\CartPage.class
+pages\HomePage.class
+Base\BaseClass.class
