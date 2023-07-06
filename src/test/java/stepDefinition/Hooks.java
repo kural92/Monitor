@@ -59,7 +59,7 @@ public class Hooks extends BaseClass{
 	        {
 	       
 			 byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-             scenario.attach(screenshot, "image/png", Feature.getGherkinName());
+             scenario.attach(screenshot, "image/png", scenario.getName());
 	        
              Thread.sleep(5000);
             // mail_report();
