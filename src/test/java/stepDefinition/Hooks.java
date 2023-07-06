@@ -98,14 +98,14 @@ public class Hooks extends BaseClass{
 			}
 			
 			if (level2.equals("2")) {
-			//	mail_report();
+				mail_report();
 				BaseClass.writeData("Mail", 3, 1, "2");
 			} else {
 
 			}
 			
 			if (scenario.isFailed()) {
-					mail_report();
+			//		mail_report();
 					BaseClass.writeData("Mail", 2, 1, "2");
 				}
 		
@@ -116,7 +116,7 @@ public class Hooks extends BaseClass{
 	@After(order=0)
 	private void mail() {
 		System.out.println("Sending Mail");
-		mail_report();
+	//	mail_report();
 	}
 	
 	//////////////////////////////////////////
@@ -169,16 +169,16 @@ public class Hooks extends BaseClass{
 	      message.setFrom(new InternetAddress("application.alert@netmeds.com"));
 	      message.setSubject("Take Action Alert Mail"+date);
 
-	     message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("amudhan.nagarajan@netmeds.com"));
+	     message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("amudhan.nagarajan@netmeds.com,amudhan.nagarajan@ril.com"));
 	      //message.setRecipients(Message.RecipientType.TO,InternetAddress.parse(,balasanthoshkumar.r@netmeds.com)
 	      Multipart multipart = new MimeMultipart();
 
 	      MimeBodyPart messageBodyPart = new MimeBodyPart();
 	      messageBodyPart.setText("Hi Team,"+"\n\n"+"Looks like some functionality  is unstable in the Netmeds Application.."+"\n"+"\n"+"\n"+"\n\n\n"+"Regards,"+"\n"+"Automation Testing Team.");
 	      MimeBodyPart attachmentBodyPart = new MimeBodyPart();
-	      String file = System.getProperty("user.dir")+"/test-output/SparkReport/Index.html";  // File To Attach
+	      String file = System.getProperty("user.dir")+"/Report/PdfReport/Extentpdf.pdf";  // File To Attach
 	      
-	      String file1 = System.getProperty("user.dir")+"/ScreenShot/Netmeds Website Monitor.png";
+	      String file1 = System.getProperty("user.dir")+"/ScreenShot/Search the any of the Product and add into the Cart and Place the Order.png";
 	      BodyPart attachmentBodyPart1 = new MimeBodyPart();
 	      DataSource source1 = new FileDataSource(file1);
 	      // messageBodyPart.setDataHandler(new DataHandler(source));
