@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"> Webpage monitor Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 4, 2023 05:53:45 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 6, 2023 03:03:57 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 4, 2023 05:53:45 PM</h3>
+<h3>Jul 6, 2023 03:03:57 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 4, 2023 05:55:55 PM</h3>
+<h3>Jul 6, 2023 03:06:13 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -148,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'><b>4</b> steps passed</small></div>
+<div><small data-tooltip='25%'><b>2</b> steps passed</small></div>
 <div>
 <small data-tooltip='12%'><b>1</b> steps failed,
-<b>3</b> skipped, <b data-tooltip='%'>0</b> others
+<b>5</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Medicine flow to check and place the order":128.497
+"Medicine flow to check and place the order":134.682
 };
 </script>
 <div class="row">
@@ -177,7 +177,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@tag</td>
+<td>@tag1</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -185,7 +185,7 @@ var timeline = {
 <td>0%</td>
 </tr>
 <tr>
-<td>@tag1</td>
+<td>@tag</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -238,10 +238,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 4,
+passGrandChild: 2,
 failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 3,
+skipGrandChild: 5,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -263,7 +263,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@tag</a><a class="dropdown-item" href="#">@tag1</a>
+<a class="dropdown-item" href="#">@tag1</a><a class="dropdown-item" href="#">@tag</a>
 </ul>
 </li>
 </ul>
@@ -276,7 +276,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Medicine flow to check and place the order</p>
             <p class="text-sm">
-              <span>5:53:46 PM</span> / <span>00:02:08:497</span>
+              <span>3:03:58 PM</span> / <span>00:02:14:682</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -285,9 +285,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Medicine flow to check and place the order</h5>
-<span class='badge badge-success'>07.04.2023 5:53:46 PM</span>
-<span class='badge badge-danger'>07.04.2023 5:55:55 PM</span>
-<span class='badge badge-default'>00:02:08:497</span>
+<span class='badge badge-success'>07.06.2023 3:03:58 PM</span>
+<span class='badge badge-danger'>07.06.2023 3:06:13 PM</span>
+<span class='badge badge-default'>00:02:14:682</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -312,28 +312,18 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinition.MedicineFlow1.clear_the_cart_and_search_the_product()">
+              <div class="step fail-bg" title="stepDefinition.MedicineFlow1.clear_the_cart_and_search_the_product()">
                 <span>When Clear the Cart and  Search the Product</span>
       <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinition.MedicineFlow1.click_on_add_to_the_cart_and_add_the_product()">
-                <span>And click on Add to the cart and add the product</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="stepDefinition.MedicineFlow1.click_on_cart_page_proceed_the_product_to_order_page()">
-                <span>And Click on cart page proceed the Product to Order Page</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="text">...</div> is not clickable at point (1132, 45). Other element would receive the click: <iframe title="notification-frame-22a357429" name="notification-frame-22a357429" id="webklipper-publisher-widget-container-notification-frame" frameborder="0" marginheight="0" marginwidth="0" style="display: block; position: fixed; z-index: 16776272; left: -1000px; top: -1000px; width: 100%; visibility: visible; overflow: visible; height: 61.5185px; transform: translate(1000px, 1000px);" data-notification-layout-id="~fg00aad" data-notification-layout-name="undefined"></iframe>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=114.0.5735.199)
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7ff4556808cca1c077a58a3c205de74f, clickElement {id=F23FBFBA86558E5CAA98B000E7FC2A41_element_830}]
+Command: [bab8bed377088cc34dbfbdb87b117564, clickElement {id=9DDC636D99127B8CC93ACEC886B978DE_element_213}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f...}, goog:chromeOptions: {debuggerAddress: localhost:9988}, pageLoadStrategy: normal, platformName: any, proxy: Proxy(), se:cdp: ws://localhost:9988/devtool..., se:cdpVersion: 114.0.5735.199, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on any (7ff4556808cca1c077a58a3c205de74f)] -> xpath: //div[@class='text']]
-Session ID: 7ff4556808cca1c077a58a3c205de74f
+Element: [[ChromeDriver: chrome on any (bab8bed377088cc34dbfbdb87b117564)] -> xpath: //button[contains(text(),'REMOVE')]]
+Session ID: bab8bed377088cc34dbfbdb87b117564
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -353,10 +343,20 @@ Session ID: 7ff4556808cca1c077a58a3c205de74f
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy23.click(Unknown Source)
-	at stepDefinition.MedicineFlow1.click_on_cart_page_proceed_the_product_to_order_page(MedicineFlow1.java:135)
-	at ✽.Click on cart page proceed the Product to Order Page(file:///C:/Users/Netmeds/eclipse-workspace/Monitor/src/test/resources/M1.feature:12)
+	at stepDefinition.MedicineFlow1.clear_the_cart_and_search_the_product(MedicineFlow1.java:70)
+	at ✽.Clear the Cart and  Search the Product(file:///C:/Users/Netmeds/eclipse-workspace/Monitor/src/test/resources/M1.feature:10)
 </textarea>
       
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.MedicineFlow1.click_on_add_to_the_cart_and_add_the_product()">
+                <span>And click on Add to the cart and add the product</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.MedicineFlow1.click_on_cart_page_proceed_the_product_to_order_page()">
+                <span>And Click on cart page proceed the Product to Order Page</span>
+      <div>Step skipped
       </div>
               </div>
               <div class="step skip-bg" title="stepDefinition.MedicineFlow1.from_order_page_choose_delivery_adress_and_click_on_pay()">
@@ -413,42 +413,6 @@ Session ID: 7ff4556808cca1c077a58a3c205de74f
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@tag</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@tag</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:53:46 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Search the any of the Product and add into the Cart and Place the Order</a>
-<div class="">
-<span class="badge badge-default">Medicine flow to check and place the order.Search the any of the Product and add into the Cart and Place the Order</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
 <p class="name">@tag1</p>
 <p class="duration text-sm">1 tests</p>
 </div>
@@ -468,7 +432,43 @@ Session ID: 7ff4556808cca1c077a58a3c205de74f
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:53:46 PM</td>
+<td>15:03:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Search the any of the Product and add into the Cart and Place the Order</a>
+<div class="">
+<span class="badge badge-default">Medicine flow to check and place the order.Search the any of the Product and add into the Cart and Place the Order</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@tag</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@tag</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:03:58 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Search the any of the Product and add into the Cart and Place the Order</a>
 <div class="">
@@ -501,12 +501,12 @@ Session ID: 7ff4556808cca1c077a58a3c205de74f
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="name">org.openqa.selenium.ElementNotInteractableException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<h4>org.openqa.selenium.ElementNotInteractableException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -520,11 +520,11 @@ Session ID: 7ff4556808cca1c077a58a3c205de74f
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:55:05 PM</td>
+<td>15:05:16 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='6'>And Click on cart page proceed the Product to Order Page</a>
+<a href="#" class="linked" test-id='1' id='4'>When Clear the Cart and Search the Product</a>
 <div class="">
-<span class="badge badge-default">Medicine flow to check and place the order.Search the any of the Product and add into the Cart and Place the Order.And Click on cart page proceed the Product to Order Page</span>
+<span class="badge badge-default">Medicine flow to check and place the order.Search the any of the Product and add into the Cart and Place the Order.When Clear the Cart and Search the Product</span>
 </div>
 </td>
 </tr>
