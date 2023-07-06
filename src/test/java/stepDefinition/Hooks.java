@@ -101,7 +101,7 @@ public class Hooks extends BaseClass{
 			}
 			
 			if (level2.equals("2")) {
-				mail_report();
+			//	mail_report();
 				BaseClass.writeData("Mail", 3, 1, "2");
 			} else {
 
@@ -110,6 +110,8 @@ public class Hooks extends BaseClass{
 			if (scenario.isFailed()) {
 			//		mail_report();
 					BaseClass.writeData("Mail", 2, 1, "2");
+					
+					BaseClass.writeData("Mail", 1, 1, "2");
 				}
 		
 		System.out.println("After scenario executed successfully");
