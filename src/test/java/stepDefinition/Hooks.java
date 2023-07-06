@@ -1,6 +1,7 @@
 package stepDefinition;
 
 import java.io.File;
+import java.lang.reflect.Method;
 import java.util.Date;
 import java.util.Properties;
 
@@ -23,6 +24,8 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+
+import com.aventstack.extentreports.gherkin.model.Feature;
 
 import Base.BaseClass;
 import io.cucumber.java.After;
@@ -56,7 +59,7 @@ public class Hooks extends BaseClass{
 	        {
 	       
 			 byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-             scenario.attach(screenshot, "image/png", scenario.getName());
+             scenario.attach(screenshot, "image/png", Feature.getGherkinName());
 	        
              Thread.sleep(5000);
             // mail_report();

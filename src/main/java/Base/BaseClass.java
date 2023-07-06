@@ -20,7 +20,7 @@ public class BaseClass {
 	
 //////////Excel    COde   ///////////////////////
 public static String getExcelDataUrl(String sheetName, int rowNum, int colNum) throws Throwable{
-FileInputStream fis = new FileInputStream("D:\\Cucumber\\TestData\\TestData.xlsx");
+FileInputStream fis = new FileInputStream("C:\\Users\\Netmeds\\eclipse-workspace\\Monitor\\TestData\\TestData.xlsx");
 Workbook wb = WorkbookFactory.create(fis);
 Sheet sh = wb.getSheet(sheetName);
 Row row = sh.getRow(rowNum);
@@ -32,7 +32,7 @@ return data;
 
 // Row Count
 public static int getRowCount(String sheetName) throws Throwable {
-	FileInputStream fis = new FileInputStream("D:\\Cucumber\\TestData\\TestData.xlsx");
+	FileInputStream fis = new FileInputStream("C:\\Users\\Netmeds\\eclipse-workspace\\Monitor\\TestData\\TestData.xlsx");
 Workbook wb = WorkbookFactory.create(fis);
 int rowIndex = wb.getSheet(sheetName).getLastRowNum();
 return rowIndex;
@@ -42,7 +42,7 @@ return rowIndex;
 //Cell Count
 
 public static int getCellCount(String sheetName) throws Throwable {
-	FileInputStream fis = new FileInputStream("D:\\Cucumber\\TestData\\TestData.xlsx");
+	FileInputStream fis = new FileInputStream("C:\\Users\\Netmeds\\eclipse-workspace\\Monitor\\TestData\\TestData.xlsx");
 Workbook wb = WorkbookFactory.create(fis);
 Sheet sh = wb.getSheet(sheetName);
 Row row = sh.getRow(0);
@@ -53,13 +53,13 @@ return cell;
 
 // Write Excel 
 public static void writeData(String sheetName, int rowNum, int colNum,String data) throws Throwable{
-	FileInputStream fis = new FileInputStream("D:\\Cucumber\\TestData\\TestData.xlsx");
+	FileInputStream fis = new FileInputStream("C:\\Users\\Netmeds\\eclipse-workspace\\Monitor\\TestData\\TestData.xlsx");
 Workbook wb = WorkbookFactory.create(fis);
 Sheet sh = wb.getSheet(sheetName);
 Row row = sh.getRow(rowNum);
 Cell cel = row.createCell(colNum);
 cel.setCellValue(data);
-FileOutputStream fos = new FileOutputStream("D:\\Cucumber\\TestData\\TestData.xlsx");
+FileOutputStream fos = new FileOutputStream("C:\\Users\\Netmeds\\eclipse-workspace\\Monitor\\TestData\\TestData.xlsx");
 	wb.write(fos);
 	wb.close();
 
