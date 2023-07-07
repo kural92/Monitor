@@ -203,7 +203,7 @@ public class MedicineFlow1 extends BaseClass {
 	}catch (Exception e) {
 
 	}
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 		orderReviewPage.getPay_btn().click();
 		Thread.sleep(3000);
 	
