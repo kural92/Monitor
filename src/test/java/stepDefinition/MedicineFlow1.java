@@ -179,7 +179,7 @@ public class MedicineFlow1 extends BaseClass {
 	public void from_order_page_choose_delivery_adress_and_click_on_pay() throws Throwable {
 		
 		OrderReviewPage orderReviewPage = new OrderReviewPage(driver);
-		
+	try {	
 		Thread.sleep(3000);
 		if (!(orderReviewPage.getSelect_Address_List().size()==0)) {
 			Thread.sleep(1000);
@@ -192,6 +192,9 @@ public class MedicineFlow1 extends BaseClass {
 		} else {
 	System.err.println("The Address was already selected");
 		}
+	}catch (Exception e) {
+		// TODO: handle exception
+	}
 	Thread.sleep(3000);
 	try {
 		Actions acc = new Actions(driver);
