@@ -1,7 +1,6 @@
 package stepDefinition;
 
 import java.io.File;
-import java.lang.reflect.Method;
 import java.util.Date;
 import java.util.Properties;
 
@@ -24,8 +23,6 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-
-import com.aventstack.extentreports.gherkin.model.Feature;
 
 import Base.BaseClass;
 import io.cucumber.java.After;
@@ -118,11 +115,11 @@ public class Hooks extends BaseClass{
 		
 	}
 	
-	@After(order=0)
-	private void mail() {
-		System.out.println("Sending Mail");
-	//	mail_report();
-	}
+//	@After(order=0)
+//	private void mail() {
+//		System.out.println("Sending Mail");
+//	//	mail_report();
+//	}
 	
 	//////////////////////////////////////////
 	
