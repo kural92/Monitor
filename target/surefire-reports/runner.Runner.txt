@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: runner.Runner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 218.563 sec <<< FAILURE! - in runner.Runner
-Search the any of the Product and add into the Cart and Place the Order(Medicine flow to check and place the order)  Time elapsed: 209.14 sec  <<< ERROR!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <button class="btn-checkout btn btn_to_checkout m-0 ml-1 ng-star-inserted" id="pay-button" type="button">...</button> is not clickable at point (1103, 528). Other element would receive the click: <div _ngcontent-vkg-c1="" class="overlay ng-tns-c1-0 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color:rgba(51, 51, 51, 0.8);position:fixed;z-index:99999;0:background-color;1:position;2:z-index;background-color:rgba(51, 51, 51, 0.8);position:fixed;z-index:99999;">...</div>
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 182.15 sec <<< FAILURE! - in runner.Runner
+Search the any of the Product and add into the Cart and Place the Order(Medicine flow to check and place the order)  Time elapsed: 175.666 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@id='externaldoctr'])[2]"}
   (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fddf56ce20950fbd13f9cc9c95d6d66f, clickElement {id=2F173CA52E96CAA5F670418CD8470890_element_8295}]
+Command: [2d9ba0b81fb12c19f2e292c6c6e72ca6, findElement {using=xpath, value=(//input[@id='externaldoctr'])[2]}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f...}, goog:chromeOptions: {debuggerAddress: localhost:9988}, pageLoadStrategy: normal, platformName: any, proxy: Proxy(), se:cdp: ws://localhost:9988/devtool..., se:cdpVersion: 114.0.5735.199, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on any (fddf56ce20950fbd13f9cc9c95d6d66f)] -> id: pay-button]
-Session ID: fddf56ce20950fbd13f9cc9c95d6d66f
+Session ID: 2d9ba0b81fb12c19f2e292c6c6e72ca6
 

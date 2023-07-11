@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"> Webpage monitor Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 7, 2023 12:48:34 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 11, 2023 03:03:09 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 7, 2023 12:48:34 PM</h3>
+<h3>Jul 11, 2023 03:03:09 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 7, 2023 12:52:04 PM</h3>
+<h3>Jul 11, 2023 03:06:05 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -148,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='62%'><b>5</b> steps passed</small></div>
+<div><small data-tooltip='50%'><b>4</b> steps passed</small></div>
 <div>
 <small data-tooltip='12%'><b>1</b> steps failed,
-<b>2</b> skipped, <b data-tooltip='%'>0</b> others
+<b>3</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Medicine flow to check and place the order":208.969
+"Medicine flow to check and place the order":175.542
 };
 </script>
 <div class="row">
@@ -238,10 +238,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 5,
+passGrandChild: 4,
 failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 2,
+skipGrandChild: 3,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -276,7 +276,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Medicine flow to check and place the order</p>
             <p class="text-sm">
-              <span>12:48:35 PM</span> / <span>00:03:28:969</span>
+              <span>3:03:09 PM</span> / <span>00:02:55:542</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -285,9 +285,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Medicine flow to check and place the order</h5>
-<span class='badge badge-success'>07.07.2023 12:48:35 PM</span>
-<span class='badge badge-danger'>07.07.2023 12:52:04 PM</span>
-<span class='badge badge-default'>00:03:28:969</span>
+<span class='badge badge-success'>07.11.2023 3:03:09 PM</span>
+<span class='badge badge-danger'>07.11.2023 3:06:05 PM</span>
+<span class='badge badge-default'>00:02:55:542</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -322,23 +322,18 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinition.MedicineFlow1.click_on_cart_page_proceed_the_product_to_order_page()">
+              <div class="step fail-bg" title="stepDefinition.MedicineFlow1.click_on_cart_page_proceed_the_product_to_order_page()">
                 <span>And Click on cart page proceed the Product to Order Page</span>
       <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="stepDefinition.MedicineFlow1.from_order_page_choose_delivery_adress_and_click_on_pay()">
-                <span>Then From Order page choose delivery adress and click on Pay</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="btn-checkout btn btn_to_checkout m-0 ml-1 ng-star-inserted" id="pay-button" type="button">...</button> is not clickable at point (1103, 528). Other element would receive the click: <div _ngcontent-vkg-c1="" class="overlay ng-tns-c1-0 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color:rgba(51, 51, 51, 0.8);position:fixed;z-index:99999;0:background-color;1:position;2:z-index;background-color:rgba(51, 51, 51, 0.8);position:fixed;z-index:99999;">...</div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@id='externaldoctr'])[2]"}
   (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fddf56ce20950fbd13f9cc9c95d6d66f, clickElement {id=2F173CA52E96CAA5F670418CD8470890_element_8295}]
+Command: [2d9ba0b81fb12c19f2e292c6c6e72ca6, findElement {using=xpath, value=(//input[@id='externaldoctr'])[2]}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f...}, goog:chromeOptions: {debuggerAddress: localhost:9988}, pageLoadStrategy: normal, platformName: any, proxy: Proxy(), se:cdp: ws://localhost:9988/devtool..., se:cdpVersion: 114.0.5735.199, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on any (fddf56ce20950fbd13f9cc9c95d6d66f)] -> id: pay-button]
-Session ID: fddf56ce20950fbd13f9cc9c95d6d66f
+Session ID: 2d9ba0b81fb12c19f2e292c6c6e72ca6
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -350,18 +345,19 @@ Session ID: fddf56ce20950fbd13f9cc9c95d6d66f
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy22.click(Unknown Source)
-	at stepDefinition.MedicineFlow1.from_order_page_choose_delivery_adress_and_click_on_pay(MedicineFlow1.java:207)
-	at ?.From Order page choose delivery adress and click on Pay(file:///C:/Users/Netmeds/eclipse-workspace/Monitor/src/test/resources/M1.feature:13)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at stepDefinition.MedicineFlow1.click_on_cart_page_proceed_the_product_to_order_page(MedicineFlow1.java:164)
+	at ?.Click on cart page proceed the Product to Order Page(file:///C:/Users/Netmeds/eclipse-workspace/Monitor/src/test/resources/M1.feature:12)
 </textarea>
       
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.MedicineFlow1.from_order_page_choose_delivery_adress_and_click_on_pay()">
+                <span>Then From Order page choose delivery adress and click on Pay</span>
+      <div>Step skipped
       </div>
               </div>
               <div class="step skip-bg" title="stepDefinition.MedicineFlow1.check_payment_page_was_landed()">
@@ -432,7 +428,7 @@ Session ID: fddf56ce20950fbd13f9cc9c95d6d66f
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>12:48:35 PM</td>
+<td>15:03:09 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Search the any of the Product and add into the Cart and Place the Order</a>
 <div class="">
@@ -468,7 +464,7 @@ Session ID: fddf56ce20950fbd13f9cc9c95d6d66f
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>12:48:35 PM</td>
+<td>15:03:09 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Search the any of the Product and add into the Cart and Place the Order</a>
 <div class="">
@@ -501,12 +497,12 @@ Session ID: fddf56ce20950fbd13f9cc9c95d6d66f
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<h4>org.openqa.selenium.NoSuchElementException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -520,11 +516,11 @@ Session ID: fddf56ce20950fbd13f9cc9c95d6d66f
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>12:51:24 PM</td>
+<td>15:04:11 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='7'>Then From Order page choose delivery adress and click on Pay</a>
+<a href="#" class="linked" test-id='1' id='6'>And Click on cart page proceed the Product to Order Page</a>
 <div class="">
-<span class="badge badge-default">Medicine flow to check and place the order.Search the any of the Product and add into the Cart and Place the Order.Then From Order page choose delivery adress and click on Pay</span>
+<span class="badge badge-default">Medicine flow to check and place the order.Search the any of the Product and add into the Cart and Place the Order.And Click on cart page proceed the Product to Order Page</span>
 </div>
 </td>
 </tr>
