@@ -152,7 +152,7 @@ public class MedicineFlow1 extends BaseClass {
 					driver.switchTo().defaultContent();
 		
 		} catch (Exception e) {
-			
+			driver.switchTo().defaultContent();
 		}
 		
 		
@@ -180,7 +180,7 @@ public class MedicineFlow1 extends BaseClass {
 			driver.switchTo().defaultContent();
 		}else {}
 		}catch (Exception e) {
-			
+			driver.switchTo().defaultContent();
 		}
 		
 	}
