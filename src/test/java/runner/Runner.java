@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(features= {"src/test/resources/M1.feature"},glue= {"stepDefinition"},monochrome=true,
+@CucumberOptions(features= {"src/test/resources/"},glue= {"stepDefinition"},monochrome=true,
 plugin = {"pretty","junit:target/JUnitReports/report.xml",
 		"json:target/JSONReports/Json-report.json",
 		"html:Report/HtmlReports.html","rerun:Failure/rerun.txt"

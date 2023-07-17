@@ -65,11 +65,7 @@ public class Hooks extends BaseClass{
 
 		 // Mail Level
 		
-		 if (!(scenario.isFailed())) {
-		//	 mail_report();
-		} else {
-
-		}
+		
 			if (scenario.isFailed()) {
 		//		mail_report();
 			//	BaseClass.writeData("Mail", 2, 1, "2");
