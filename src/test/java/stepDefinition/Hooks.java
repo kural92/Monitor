@@ -39,15 +39,15 @@ public class Hooks extends BaseClass{
 		System.err.println(scenario.getName());
 		System.err.println(scenario.getClass());
 		
-		
-		Thread.sleep(3000);
-		//ScreenShot for all failure to attach in Email
-		if (scenario.isFailed()) {
-			TakesScreenshot ts = (TakesScreenshot) driver;
-		    File source = ts.getScreenshotAs(OutputType.FILE);
-		    FileUtils.copyFile(source, new File("./ScreenShot/"+scenario.getName()+".png"));
-		    System.out.println("ScreenShot Taken");
-		} else {}
+//		
+//		Thread.sleep(3000);
+//		//ScreenShot for all failure to attach in Email
+//		if (scenario.isFailed()) {
+//			TakesScreenshot ts = (TakesScreenshot) driver;
+//		    File source = ts.getScreenshotAs(OutputType.FILE);
+//		    FileUtils.copyFile(source, new File("./ScreenShot/"+scenario.getName()+".png"));
+//		    System.out.println("ScreenShot Taken");
+//		} else {}
 		 
 		
 		// Screenshot for all failure to add in Cucumber HTML Report *****
@@ -59,23 +59,20 @@ public class Hooks extends BaseClass{
              scenario.attach(screenshot, "image/png", scenario.getName());
 	        
              Thread.sleep(5000);
+             BaseClass.writeData("Mail", 1, 1, "2");
             // mail_report();
-	        }       
-		
-
-		 // Mail Level
-		
-		
-			if (scenario.isFailed()) {
-		//		mail_report();
-		//	BaseClass.writeData("Mail", 2, 1, "2");
-			} else {
+	        }    else {
 				
 				BaseClass.writeData("Mail", 1, 1, "1");
 				BaseClass.writeData("Mail", 2, 1, "1");
 				BaseClass.writeData("Mail", 3, 1, "1");
 
-			}
+			}   
+		
+
+		 // Mail Level
+		
+		
 			
 			
 			
@@ -100,12 +97,14 @@ public class Hooks extends BaseClass{
 
 			}
 			
-			if (scenario.isFailed()) {
-			//		mail_report();
+			if (level1.equals("2")) {
+				//	mail_report();
 					BaseClass.writeData("Mail", 2, 1, "2");
-					
-			//		BaseClass.writeData("Mail", 1, 1, "2");
+				} else {
+
 				}
+			
+		
 		
 		System.out.println("After scenario executed successfully");
 		

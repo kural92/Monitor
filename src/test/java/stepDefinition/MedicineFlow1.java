@@ -10,7 +10,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -132,17 +131,19 @@ public class MedicineFlow1 extends BaseClass {
 		OrderReviewPage orderReviewPage = new OrderReviewPage(driver);
 		
 		Thread.sleep(3000);
-		try {////div[@class='close tablecell']
-			driver.switchTo().frame("webklipper-publisher-widget-container-notification-frame");
-		//	if (!(driver.findElements(By.xpath("//button[contains(text(),'Try Again')]")).size()==0)) {
+		////div[@class='close tablecell'] webklipper-publisher-widget-container-notification-frame
+			
+			if (!(driver.findElements(By.xpath("//button[contains(text(),'Try Again')]")).size()==0)) {
+				driver.switchTo().frame("webklipper-publisher-widget-container-notification-frame");
+				System.out.println("Switched to Frame");
 				driver.findElement(By.xpath("//i[@class='we_close']|//div[@class='close tablecell']")).click();
 				driver.switchTo().defaultContent();
-		//	} else {}
+			} else {
+				driver.switchTo().defaultContent();
+			}
 			
 		
-		} catch (Exception e) {
-			driver.switchTo().defaultContent();
-		}
+		
 		
 	//	Thread.sleep(1000);
 		waitForElement(cartPage.getCart_btn());
@@ -258,7 +259,7 @@ public class MedicineFlow1 extends BaseClass {
 	public void verify_the_payment_status_of_the_order() throws Throwable {
 	  Actions acc = new Actions(driver);
 	  JavascriptExecutor js = (JavascriptExecutor)driver;
-		
+/*		
 		//	Thread.sleep(3000);
 		waitForElement(driver.findElement(By.id("nms_paytm")));
 		driver.findElement(By.id("nms_paytm")).click();
@@ -277,9 +278,9 @@ public class MedicineFlow1 extends BaseClass {
 			System.out.println("The Payment Status : "+ ff);
 			
 		} else {}
+	*/	
 		
-		
-		/*		
+	//	/*		
 			js.executeScript("window.scrollBy(0,200)");
 		Thread.sleep(1000);
 		driver.findElement(By.id("newcardlink")).click();
@@ -288,7 +289,7 @@ public class MedicineFlow1 extends BaseClass {
 		Thread.sleep(2000);
 		acc.moveToElement(driver.findElement(By.id("card_number"))).click().perform();
 		driver.findElement(By.id("card_number")).sendKeys("4111111111111111");
-	//	driver.switchTo().defaultContent();
+		driver.switchTo().defaultContent();
 	//   --->	driver.switchTo().frame(2);
 //	driver.switchTo().frame("//iframe[@class='card_exp_month_iframe']");//frame("//iframe[@class='card_exp_month_iframe']");
 		Thread.sleep(2000);
@@ -315,7 +316,7 @@ public class MedicineFlow1 extends BaseClass {
 		
 		driver.findElement(By.xpath("(//button[@type='submit'])[5]")).click();
 		
-	*/
+	//*/
 		
 		Thread.sleep(15000);
 		String fail = driver.findElement(By.xpath("//h5[contains(text(),'Transaction Failed')]")).getText();
