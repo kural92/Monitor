@@ -104,7 +104,7 @@ public class Hooks extends BaseClass{
 			//		mail_report();
 					BaseClass.writeData("Mail", 2, 1, "2");
 					
-					BaseClass.writeData("Mail", 1, 1, "2");
+			//		BaseClass.writeData("Mail", 1, 1, "2");
 				}
 		
 		System.out.println("After scenario executed successfully");

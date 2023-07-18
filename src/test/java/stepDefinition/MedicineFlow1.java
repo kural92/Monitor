@@ -143,17 +143,17 @@ public class MedicineFlow1 extends BaseClass {
 		cartPage.getCart_proceedBtn().click();
 		Thread.sleep(1000);
 		
-		try {
-			driver.switchTo().frame(1);
-			//if (!(driver.findElements(By.xpath("//div[@class='close tablecell']")).size()==0)) {
-			Thread.sleep(3000);
-					driver.findElement(By.xpath("//div[@class='close tablecell']")).click();
-		//	} else {}
-					driver.switchTo().defaultContent();
-		
-		} catch (Exception e) {
-			driver.switchTo().defaultContent();
-		}
+//		try {
+//			driver.switchTo().frame(1);
+//			//if (!(driver.findElements(By.xpath("//div[@class='close tablecell']")).size()==0)) {
+//			Thread.sleep(3000);
+//					driver.findElement(By.xpath("//div[@class='close tablecell']")).click();
+//		//	} else {}
+//					driver.switchTo().defaultContent();
+//		
+//		} catch (Exception e) {
+//			driver.switchTo().defaultContent();
+//		}
 		
 		
 		
@@ -170,18 +170,18 @@ public class MedicineFlow1 extends BaseClass {
 		}
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//button[contains(text(),'Review Order')]")).click();
-		Thread.sleep(3000);
-		try {if (!(driver.findElements(By.xpath("//div[@class='close tablecell']")).size()==0)) {
-			
-			driver.switchTo().frame(1);
-			Actions acc = new Actions(driver);
-			acc.moveToElement(driver.findElement(By.xpath("(//button[@class='close'])[4]"))).perform();
-			driver.findElement(By.xpath("(//button[@class='close'])[4]")).click();
-			driver.switchTo().defaultContent();
-		}else {}
-		}catch (Exception e) {
-			driver.switchTo().defaultContent();
-		}
+//		Thread.sleep(3000);
+//		try {if (!(driver.findElements(By.xpath("//div[@class='close tablecell']")).size()==0)) {
+//			
+//			driver.switchTo().frame(1);
+//			Actions acc = new Actions(driver);
+//			acc.moveToElement(driver.findElement(By.xpath("(//button[@class='close'])[4]"))).perform();
+//			driver.findElement(By.xpath("(//button[@class='close'])[4]")).click();
+//			driver.switchTo().defaultContent();
+//		}else {}
+//		}catch (Exception e) {
+//			driver.switchTo().defaultContent();
+//		}
 		
 	}
 
@@ -205,17 +205,17 @@ public class MedicineFlow1 extends BaseClass {
 	}catch (Exception e) {
 		// TODO: handle exception
 	}
-	Thread.sleep(3000);
-	try {
-		driver.switchTo().frame(1);
-		Actions acc = new Actions(driver);
-		acc.moveToElement(driver.findElement(By.xpath("(//button[@class='close'])[4]"))).perform();
-		driver.findElement(By.xpath("(//button[@class='close'])[4]")).click();
-		driver.switchTo().defaultContent();
-	}catch (Exception e) {
-		driver.switchTo().defaultContent();
-
-	}
+//	Thread.sleep(3000);
+//	try {
+//		driver.switchTo().frame(1);
+//		Actions acc = new Actions(driver);
+//		acc.moveToElement(driver.findElement(By.xpath("(//button[@class='close'])[4]"))).perform();
+//		driver.findElement(By.xpath("(//button[@class='close'])[4]")).click();
+//		driver.switchTo().defaultContent();
+//	}catch (Exception e) {
+//		driver.switchTo().defaultContent();
+//
+//	}
 		Thread.sleep(3000);
 		orderReviewPage.getPay_btn().click();
 		Thread.sleep(3000);
@@ -264,8 +264,8 @@ public class MedicineFlow1 extends BaseClass {
 		} else {}
 		
 		
-		
-		/*		js.executeScript("window.scrollBy(0,200)");
+		/*		
+			js.executeScript("window.scrollBy(0,200)");
 		Thread.sleep(1000);
 		driver.findElement(By.id("newcardlink")).click();
 		Thread.sleep(1000);
@@ -273,23 +273,26 @@ public class MedicineFlow1 extends BaseClass {
 		Thread.sleep(2000);
 		acc.moveToElement(driver.findElement(By.id("card_number"))).click().perform();
 		driver.findElement(By.id("card_number")).sendKeys("4111111111111111");
-		driver.switchTo().defaultContent();
-	driver.switchTo().frame("//iframe[@class='card_exp_month_iframe']");//frame("//iframe[@class='card_exp_month_iframe']");
+	//	driver.switchTo().defaultContent();
+	//   --->	driver.switchTo().frame(2);
+//	driver.switchTo().frame("//iframe[@class='card_exp_month_iframe']");//frame("//iframe[@class='card_exp_month_iframe']");
 		Thread.sleep(2000);
 		driver.findElement(By.id("card_exp_month")).click();
 		driver.findElement(By.id("card_exp_month")).sendKeys("12");
-		driver.switchTo().defaultContent();
-		driver.switchTo().frame("//iframe[@class='card_exp_year_iframe']");//frame("//iframe[@class='card_exp_year_iframe']");
+	//	driver.switchTo().defaultContent();
+		driver.switchTo().frame(3);
+	//	driver.switchTo().frame("//iframe[@class='card_exp_year_iframe']");//frame("//iframe[@class='card_exp_year_iframe']");
 		Thread.sleep(2000);
 		driver.findElement(By.id("card_exp_year")).click();
 		driver.findElement(By.id("card_exp_year")).sendKeys("27");
-		driver.switchTo().defaultContent();
-		driver.switchTo().frame("//iframe[@class='security_code_iframe']");//frame("//iframe[@class='security_code_iframe']");
+	//	driver.switchTo().defaultContent();
+	driver.switchTo().frame(4);	
+	//	driver.switchTo().frame("//iframe[@class='security_code_iframe']");//frame("//iframe[@class='security_code_iframe']");
 		Thread.sleep(2000);
 		driver.findElement(By.id("security_code")).click();
 		driver.findElement(By.id("security_code")).sendKeys("411");
-		driver.switchTo().defaultContent();
-	
+	//	driver.switchTo().defaultContent();
+	driver.switchTo().frame(5);
 		//	driver.switchTo().frame("name_on_card_iframe_xvewG6ohcY4Pdhpg");
 		Thread.sleep(2000);
 		driver.findElement(By.id("name_on_card")).click();
@@ -297,13 +300,13 @@ public class MedicineFlow1 extends BaseClass {
 		
 		driver.findElement(By.xpath("(//button[@type='submit'])[5]")).click();
 		
-	
+	*/
 		
 		Thread.sleep(15000);
 		String fail = driver.findElement(By.xpath("//h5[contains(text(),'Transaction Failed')]")).getText();
 		System.err.println("The Transaction status was : "+fail);
 	
-*/
+
 		
 		
 	}
