@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"> Webpage monitor Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 18, 2023 11:24:16 AM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 18, 2023 04:01:17 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 18, 2023 11:24:16 AM</h3>
+<h3>Jul 18, 2023 04:01:17 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 18, 2023 11:28:03 AM</h3>
+<h3>Jul 18, 2023 04:04:28 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -148,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='87%'><b>7</b> steps passed</small></div>
+<div><small data-tooltip='50%'><b>4</b> steps passed</small></div>
 <div>
 <small data-tooltip='12%'><b>1</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<b>3</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Medicine flow to check and place the order":226.664
+"Medicine flow to check and place the order":189.718
 };
 </script>
 <div class="row">
@@ -238,10 +238,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 7,
+passGrandChild: 4,
 failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 3,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -276,7 +276,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Medicine flow to check and place the order</p>
             <p class="text-sm">
-              <span>11:24:16 AM</span> / <span>00:03:46:664</span>
+              <span>4:01:18 PM</span> / <span>00:03:09:718</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -285,9 +285,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Medicine flow to check and place the order</h5>
-<span class='badge badge-success'>07.18.2023 11:24:16 AM</span>
-<span class='badge badge-danger'>07.18.2023 11:28:03 AM</span>
-<span class='badge badge-default'>00:03:46:664</span>
+<span class='badge badge-success'>07.18.2023 4:01:18 PM</span>
+<span class='badge badge-danger'>07.18.2023 4:04:28 PM</span>
+<span class='badge badge-default'>00:03:09:718</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -322,33 +322,18 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinition.MedicineFlow1.click_on_cart_page_proceed_the_product_to_order_page()">
+              <div class="step fail-bg" title="stepDefinition.MedicineFlow1.click_on_cart_page_proceed_the_product_to_order_page()">
                 <span>And Click on cart page proceed the Product to Order Page</span>
       <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinition.MedicineFlow1.from_order_page_choose_delivery_adress_and_click_on_pay()">
-                <span>Then From Order page choose delivery adress and click on Pay</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinition.MedicineFlow1.check_payment_page_was_landed()">
-                <span>And check Payment page was landed</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="stepDefinition.MedicineFlow1.verify_the_payment_status_of_the_order()">
-                <span>And Verify the payment status of the order</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#card_exp_month"}
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@id='externaldoctr'])[2]"}
   (Session info: chrome=114.0.5735.199)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d3531daf2f74ada09a11277b3978fb22, findElement {using=id, value=card_exp_month}]
+Command: [22c24e3efa1a11c976310465e3286359, findElement {using=xpath, value=(//input[@id='externaldoctr'])[2]}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f...}, goog:chromeOptions: {debuggerAddress: localhost:9988}, pageLoadStrategy: normal, platformName: any, proxy: Proxy(), se:cdp: ws://localhost:9988/devtool..., se:cdpVersion: 114.0.5735.199, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d3531daf2f74ada09a11277b3978fb22
+Session ID: 22c24e3efa1a11c976310465e3286359
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -364,10 +349,25 @@ Session ID: d3531daf2f74ada09a11277b3978fb22
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at stepDefinition.MedicineFlow1.verify_the_payment_status_of_the_order(MedicineFlow1.java:280)
-	at ✽.Verify the payment status of the order(file:///C:/Users/Netmeds/eclipse-workspace/Monitor/src/test/resources/M1.feature:15)
+	at stepDefinition.MedicineFlow1.click_on_cart_page_proceed_the_product_to_order_page(MedicineFlow1.java:174)
+	at ?.Click on cart page proceed the Product to Order Page(file:///C:/Users/Netmeds/eclipse-workspace/Monitor/src/test/resources/M1.feature:12)
 </textarea>
       
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.MedicineFlow1.from_order_page_choose_delivery_adress_and_click_on_pay()">
+                <span>Then From Order page choose delivery adress and click on Pay</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.MedicineFlow1.check_payment_page_was_landed()">
+                <span>And check Payment page was landed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.MedicineFlow1.verify_the_payment_status_of_the_order()">
+                <span>And Verify the payment status of the order</span>
+      <div>Step skipped
       </div>
               </div>
               <div class="step pass-bg" title="AFTER">
@@ -428,7 +428,7 @@ Session ID: d3531daf2f74ada09a11277b3978fb22
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>11:24:16 AM</td>
+<td>16:01:18 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Search the any of the Product and add into the Cart and Place the Order</a>
 <div class="">
@@ -464,7 +464,7 @@ Session ID: d3531daf2f74ada09a11277b3978fb22
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>11:24:16 AM</td>
+<td>16:01:18 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Search the any of the Product and add into the Cart and Place the Order</a>
 <div class="">
@@ -516,11 +516,11 @@ Session ID: d3531daf2f74ada09a11277b3978fb22
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>11:27:03 AM</td>
+<td>16:02:23 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='9'>And Verify the payment status of the order</a>
+<a href="#" class="linked" test-id='1' id='6'>And Click on cart page proceed the Product to Order Page</a>
 <div class="">
-<span class="badge badge-default">Medicine flow to check and place the order.Search the any of the Product and add into the Cart and Place the Order.And Verify the payment status of the order</span>
+<span class="badge badge-default">Medicine flow to check and place the order.Search the any of the Product and add into the Cart and Place the Order.And Click on cart page proceed the Product to Order Page</span>
 </div>
 </td>
 </tr>

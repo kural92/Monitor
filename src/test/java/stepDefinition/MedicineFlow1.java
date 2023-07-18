@@ -1,13 +1,18 @@
 package stepDefinition;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Base.BaseClass;
 import io.cucumber.java.en.Given;
@@ -105,7 +110,9 @@ public class MedicineFlow1 extends BaseClass {
 		
 		
 		js.executeScript("window.scrollBy(0,200)");
-		Thread.sleep(2000);
+	
+		//Thread.sleep(2000);
+		waitForElement(searchResultPage.getAddToCart());
 		searchResultPage.getAddToCart().click();
 		Thread.sleep(3000);
 		try {
@@ -137,9 +144,12 @@ public class MedicineFlow1 extends BaseClass {
 			driver.switchTo().defaultContent();
 		}
 		
-		Thread.sleep(1000);
+	//	Thread.sleep(1000);
+		waitForElement(cartPage.getCart_btn());
 		cartPage.getCart_btn().click();
-	Thread.sleep(3000);
+		
+//	Thread.sleep(3000);
+		waitForElement(cartPage.getCart_proceedBtn());
 		cartPage.getCart_proceedBtn().click();
 		Thread.sleep(1000);
 		
@@ -191,6 +201,7 @@ public class MedicineFlow1 extends BaseClass {
 		OrderReviewPage orderReviewPage = new OrderReviewPage(driver);
 	try {	
 		Thread.sleep(3000);
+		
 		if (!(orderReviewPage.getSelect_Address_List().size()==0)) {
 			Thread.sleep(1000);
 			orderReviewPage.getSelect_Address().click();
@@ -216,7 +227,9 @@ public class MedicineFlow1 extends BaseClass {
 //		driver.switchTo().defaultContent();
 //
 //	}
-		Thread.sleep(3000);
+	
+	//	Thread.sleep(3000);
+	waitForElement(orderReviewPage.getPay_btn());
 		orderReviewPage.getPay_btn().click();
 		Thread.sleep(3000);
 	
@@ -246,10 +259,12 @@ public class MedicineFlow1 extends BaseClass {
 	  Actions acc = new Actions(driver);
 	  JavascriptExecutor js = (JavascriptExecutor)driver;
 		
-			Thread.sleep(3000);
-		
+		//	Thread.sleep(3000);
+		waitForElement(driver.findElement(By.id("nms_paytm")));
 		driver.findElement(By.id("nms_paytm")).click();
-		Thread.sleep(3000);
+		
+		//Thread.sleep(3000);
+		waitForElement(driver.findElement(By.xpath("//button[@class='process-orderplace']")));
 		driver.findElement(By.xpath("//button[@class='process-orderplace']")).click();
 		Thread.sleep(3000);
 		driver.navigate().back();
@@ -310,6 +325,17 @@ public class MedicineFlow1 extends BaseClass {
 		
 		
 	}
+	
+	
+	public void waitForElement(WebElement element) {
+		
+		WebDriverWait waitt = new WebDriverWait(driver, Duration.ofSeconds(30) );
+		waitt.until(ExpectedConditions.visibilityOf(element));
+		
+	}
+	
+	
+	
 	
 	
 }

@@ -40,9 +40,6 @@ public class Labtest extends BaseClass{
 @Given("Check Already logged in Browser was Opened Click on Labtest button")
 public void check_already_logged_in_browser_was_opened_click_on_labtest_button() throws Throwable {
 	
-	LabTest labTest = new LabTest(driver);
-	 JavascriptExecutor js = (JavascriptExecutor)driver;
-	 Actions acc = new Actions(driver);
 	
 	System.setProperty("webdriver.http.factory", "jdk-http-client");
 	ChromeOptions option = new ChromeOptions();
@@ -57,7 +54,11 @@ public void check_already_logged_in_browser_was_opened_click_on_labtest_button()
 	
 	  driver.get("https://www.netmeds.com");
 	  
-	  
+
+		LabTest labTest = new LabTest(driver);
+		 JavascriptExecutor js = (JavascriptExecutor)driver;
+		 Actions acc = new Actions(driver);
+		 
 	  String user = driver.findElement(By.id("logged_user")).getText();
 	  System.out.println("The Logged User was : "+user);
 	  System.err.println("The Already logged browser was opened successfuly ");
@@ -139,12 +140,13 @@ public void check_all_text_fields_was_enabled_and_click_on_pathology() {
  
 }
 
-@Then("Click on Pathology and enter the required details Amudhan N,{int} and {int}")
-public void click_on_pathology_and_enter_the_required_details_amudhan_n_and(Integer int1, Integer int2) {
+@Then("Click on Pathology and enter the required details")
+public void click_on_pathology_and_enter_the_required_details() {
 	LabTest labTest = new LabTest(driver);
 	 JavascriptExecutor js = (JavascriptExecutor)driver;
 	 Actions acc = new Actions(driver);
 	 
+	 js.executeScript("window.scrollBy(0,350)");
 	 
 	 labTest.getLabTest_Name().sendKeys("Amudhan N");
 
