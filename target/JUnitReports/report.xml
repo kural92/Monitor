@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="161.982" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Medicine flow to check and place the order" name="Search the any of the Product and add into the Cart and Place the Order" time="161.829">
+<system-out><![CDATA[
+Given Check Already Logged in Browser was Opened............................passed
+When Clear the Cart and  Search the Product.................................passed
+And click on Add to the cart and add the product............................passed
+And Click on cart page proceed the Product to Order Page....................passed
+Then From Order page choose delivery adress and click on Pay................passed
+And check Payment page was landed...........................................passed
+And Verify the payment status of the order..................................passed
+]]></system-out>
+</testcase>
+</testsuite>

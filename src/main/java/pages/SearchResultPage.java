@@ -25,7 +25,7 @@ public class SearchResultPage {
 	
 	// ***************************************** Add to cart *********************
 	
-	@FindBy(xpath = "//*[@id='algolia_hits']/div/ol/li[1]/div/form/button")
+	@FindBy(xpath = "//*[@id=\"algolia_hits\"]/div/div/ol/li[1]/div/form/button")
     private WebElement AddToCart;
 	public WebElement getAddToCart() {
 		return AddToCart;

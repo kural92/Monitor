@@ -141,8 +141,8 @@ public class MedicineFlow1 extends BaseClass {
 			} else {
 				driver.switchTo().defaultContent();
 			}
-			
-		
+			JavascriptExecutor js = (JavascriptExecutor)driver;
+			js.executeScript("window.scrollBy(300,0)");
 		
 		
 	//	Thread.sleep(1000);
@@ -153,7 +153,7 @@ public class MedicineFlow1 extends BaseClass {
 		waitForElement(cartPage.getCart_proceedBtn());
 		cartPage.getCart_proceedBtn().click();
 		Thread.sleep(1000);
-		
+		driver.navigate().to("https://www.netmeds.com/checkout/upload-rx");
 //		try {
 //			driver.switchTo().frame(1);
 //			//if (!(driver.findElements(By.xpath("//div[@class='close tablecell']")).size()==0)) {
@@ -171,7 +171,8 @@ public class MedicineFlow1 extends BaseClass {
 		
 		//////////   
 		
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
+		waitForElement(driver.findElement(By.xpath("(//input[@id='externaldoctr'])[2]")));
 		if (driver.findElement(By.xpath("(//input[@id='externaldoctr'])[2]")).isSelected()) {
 			
 			System.err.println("The Schedule Doctor was Already selected");
@@ -180,6 +181,7 @@ public class MedicineFlow1 extends BaseClass {
 			driver.findElement(By.xpath("(//input[@id='externaldoctr'])[2]")).click();
 		}
 		Thread.sleep(1000);
+		waitForElement(driver.findElement(By.xpath("//button[contains(text(),'Review Order')]")));
 		driver.findElement(By.xpath("//button[contains(text(),'Review Order')]")).click();
 //		Thread.sleep(3000);
 //		try {if (!(driver.findElements(By.xpath("//div[@class='close tablecell']")).size()==0)) {
@@ -228,8 +230,10 @@ public class MedicineFlow1 extends BaseClass {
 //		driver.switchTo().defaultContent();
 //
 //	}
+	JavascriptExecutor js = (JavascriptExecutor)driver;
+	js.executeScript("window.scrollBy(0,200)");
 	
-	//	Thread.sleep(3000);
+		Thread.sleep(3000);
 	waitForElement(orderReviewPage.getPay_btn());
 		orderReviewPage.getPay_btn().click();
 		Thread.sleep(3000);
@@ -238,7 +242,7 @@ public class MedicineFlow1 extends BaseClass {
 
 	@Then("check Payment page was landed")
 	public void check_payment_page_was_landed() throws Throwable {
-		
+		waitForElement(driver.findElement(By.xpath("//span[contains(text(),'Payment Details')]")));
 		 if (driver.findElement(By.xpath("//span[contains(text(),'Payment Details')]")).isDisplayed()) {
 			  
 			  String pay = driver.findElement(By.xpath("//span[contains(text(),'Payment Details')]")).getText();
@@ -285,40 +289,52 @@ public class MedicineFlow1 extends BaseClass {
 		Thread.sleep(1000);
 		driver.findElement(By.id("newcardlink")).click();
 		Thread.sleep(1000);
+		 int countIframesInPage = driver.findElements(By.tagName("iframe")).size();
+         System.out.println("Number of Frames on a Page:" + countIframesInPage);
 		driver.switchTo().frame(1);
 		Thread.sleep(2000);
 		acc.moveToElement(driver.findElement(By.id("card_number"))).click().perform();
 		driver.findElement(By.id("card_number")).sendKeys("4111111111111111");
-		driver.switchTo().defaultContent();
-	//   --->	driver.switchTo().frame(2);
+	driver.switchTo().defaultContent();
+//	driver.switchTo().frame(0);
 //	driver.switchTo().frame("//iframe[@class='card_exp_month_iframe']");//frame("//iframe[@class='card_exp_month_iframe']");
 		Thread.sleep(2000);
+		driver.switchTo().frame(driver.findElement(By.xpath("(//iframe[@frameborder=0])[2]")));
 		driver.findElement(By.id("card_exp_month")).click();
 		driver.findElement(By.id("card_exp_month")).sendKeys("12");
 	//	driver.switchTo().defaultContent();
-		driver.switchTo().frame(3);
+//		driver.switchTo().frame(1);
 	//	driver.switchTo().frame("//iframe[@class='card_exp_year_iframe']");//frame("//iframe[@class='card_exp_year_iframe']");
+		driver.switchTo().defaultContent();
+		Thread.sleep(2000);
+		driver.switchTo().frame(driver.findElement(By.xpath("(//iframe[@frameborder=0])[3]")));
 		Thread.sleep(2000);
 		driver.findElement(By.id("card_exp_year")).click();
 		driver.findElement(By.id("card_exp_year")).sendKeys("27");
 	//	driver.switchTo().defaultContent();
-	driver.switchTo().frame(4);	
+//	driver.switchTo().frame(2);	
 	//	driver.switchTo().frame("//iframe[@class='security_code_iframe']");//frame("//iframe[@class='security_code_iframe']");
+		driver.switchTo().defaultContent();
+		Thread.sleep(2000);
+		driver.switchTo().frame(driver.findElement(By.xpath("(//iframe[@frameborder=0])[4]")));
 		Thread.sleep(2000);
 		driver.findElement(By.id("security_code")).click();
 		driver.findElement(By.id("security_code")).sendKeys("411");
-	//	driver.switchTo().defaultContent();
-	driver.switchTo().frame(5);
+		driver.switchTo().defaultContent();
+	//driver.switchTo().frame(5);
 		//	driver.switchTo().frame("name_on_card_iframe_xvewG6ohcY4Pdhpg");
+		Thread.sleep(2000);
+		driver.switchTo().frame(driver.findElement(By.xpath("(//iframe[@frameborder=0])[5]")));
 		Thread.sleep(2000);
 		driver.findElement(By.id("name_on_card")).click();
 		driver.findElement(By.id("name_on_card")).sendKeys("Netmeds.com Test");
-		
+		Thread.sleep(2000);
+		driver.switchTo().defaultContent();
 		driver.findElement(By.xpath("(//button[@type='submit'])[5]")).click();
 		
 	//*/
-		
-		Thread.sleep(15000);
+		waitForElement(driver.findElement(By.xpath("//h5[contains(text(),'Transaction Failed')]")));
+		//Thread.sleep(15000);
 		String fail = driver.findElement(By.xpath("//h5[contains(text(),'Transaction Failed')]")).getText();
 		System.err.println("The Transaction status was : "+fail);
 	
