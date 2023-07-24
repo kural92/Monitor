@@ -138,8 +138,10 @@ public class MedicineFlow1 extends BaseClass {
 				System.out.println("Switched to Frame");
 				driver.findElement(By.xpath("//i[@class='we_close']|//div[@class='close tablecell']")).click();
 				driver.switchTo().defaultContent();
+				System.out.println("out of Frame");
 			} else {
 				driver.switchTo().defaultContent();
+				System.out.println("out of Frame");
 			}
 			JavascriptExecutor js = (JavascriptExecutor)driver;
 			js.executeScript("window.scrollBy(300,0)");
