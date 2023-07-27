@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"> Webpage monitor Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 24, 2023 02:01:34 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 27, 2023 10:01:33 AM</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 24, 2023 02:01:34 PM</h3>
+<h3>Jul 27, 2023 10:01:33 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 24, 2023 02:03:24 PM</h3>
+<h3>Jul 27, 2023 10:02:48 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -148,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'><b>4</b> steps passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
 <div>
-<small data-tooltip='12%'><b>1</b> steps failed,
-<b>3</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='25%'><b>2</b> steps failed,
+<b>6</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Medicine flow to check and place the order":109.629
+"Medicine flow to check and place the order":74.558
 };
 </script>
 <div class="row">
@@ -238,10 +238,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 4,
-failGrandChild: 1,
+passGrandChild: 0,
+failGrandChild: 2,
 warningGrandChild: 0,
-skipGrandChild: 3,
+skipGrandChild: 6,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -276,7 +276,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Medicine flow to check and place the order</p>
             <p class="text-sm">
-              <span>2:01:35 PM</span> / <span>00:01:49:629</span>
+              <span>10:01:34 AM</span> / <span>00:01:14:558</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -285,9 +285,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Medicine flow to check and place the order</h5>
-<span class='badge badge-success'>07.24.2023 2:01:35 PM</span>
-<span class='badge badge-danger'>07.24.2023 2:03:24 PM</span>
-<span class='badge badge-default'>00:01:49:629</span>
+<span class='badge badge-success'>07.27.2023 10:01:34 AM</span>
+<span class='badge badge-danger'>07.27.2023 10:02:48 AM</span>
+<span class='badge badge-default'>00:01:14:558</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -300,63 +300,52 @@ eventsCount: 5,
     <div class="card-header" role="tab">
       <div class="card-title">
         <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Search the any of the Product and add into the Cart and Place the Order</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
       </div>
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="stepDefinition.MedicineFlow1.check_already_logged_in_browser_was_opened()">
+              <div class="step fail-bg" title="stepDefinition.MedicineFlow1.check_already_logged_in_browser_was_opened()">
                 <span>Given Check Already Logged in Browser was Opened</span>
       <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinition.MedicineFlow1.clear_the_cart_and_search_the_product()">
-                <span>When Clear the Cart and  Search the Product</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinition.MedicineFlow1.click_on_add_to_the_cart_and_add_the_product()">
-                <span>And click on Add to the cart and add the product</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="stepDefinition.MedicineFlow1.click_on_cart_page_proceed_the_product_to_order_page()">
-                <span>And Click on cart page proceed the Product to Order Page</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="text">...</div> is not clickable at point (1132, 44). Other element would receive the click: <iframe title="notification-frame-22a357429" name="notification-frame-22a357429" id="webklipper-publisher-widget-container-notification-frame" frameborder="0" marginheight="0" marginwidth="0" style="display: block; position: fixed; z-index: 16776272; left: -1000px; top: -1000px; width: 100%; visibility: visible; overflow: visible; height: 61.5185px; transform: translate(1000px, 1000px);" data-notification-layout-id="~fg00aad" data-notification-layout-name="undefined"></iframe>
-  (Session info: chrome=114.0.5735.248)
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot connect to chrome at localhost:9988
+from chrome not reachable 
+Host info: host: 'NMSPC467', ip: '192.168.108.21'
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [262e593b04ebbe2add33d66ef50255f4, clickElement {id=7461A264F37D6E6F66B00193916B2C3A_element_1861}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f...}, goog:chromeOptions: {debuggerAddress: localhost:9988}, pageLoadStrategy: normal, platformName: any, proxy: Proxy(), se:cdp: ws://localhost:9988/devtool..., se:cdpVersion: 114.0.5735.248, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on any (262e593b04ebbe2add33d66ef50255f4)] -> xpath: //div[@class='text']]
-Session ID: 262e593b04ebbe2add33d66ef50255f4
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-notifications, --remote-allow-origins=*], debuggerAddress: localhost:9988, extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy22.click(Unknown Source)
-	at stepDefinition.MedicineFlow1.click_on_cart_page_proceed_the_product_to_order_page(MedicineFlow1.java:150)
-	at ?.Click on cart page proceed the Product to Order Page(file:///C:/Users/Netmeds/eclipse-workspace/Monitor/src/test/resources/M1.feature:12)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:227)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:107)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:87)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+	at stepDefinition.MedicineFlow1.check_already_logged_in_browser_was_opened(MedicineFlow1.java:35)
+	at ?.Check Already Logged in Browser was Opened(file:///C:/Users/Netmeds/eclipse-workspace/Monitor/src/test/resources/M1.feature:9)
 </textarea>
       
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.MedicineFlow1.clear_the_cart_and_search_the_product()">
+                <span>When Clear the Cart and  Search the Product</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.MedicineFlow1.click_on_add_to_the_cart_and_add_the_product()">
+                <span>And click on Add to the cart and add the product</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.MedicineFlow1.click_on_cart_page_proceed_the_product_to_order_page()">
+                <span>And Click on cart page proceed the Product to Order Page</span>
+      <div>Step skipped
       </div>
               </div>
               <div class="step skip-bg" title="stepDefinition.MedicineFlow1.from_order_page_choose_delivery_adress_and_click_on_pay()">
@@ -374,15 +363,13 @@ Session ID: 262e593b04ebbe2add33d66ef50255f4
       <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="AFTER">
+              <div class="step fail-bg" title="AFTER">
                 <span>stepDefinition.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>Search the any of the Product and add into the Cart and Place the Order
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded1.png' src="../embedded1.png">
-    
-    </div></div>
-</div>
       <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at stepDefinition.Hooks.tearDown(Hooks.java:58)
+</textarea>
+      
       </div>
               </div>
           </div>
@@ -432,7 +419,7 @@ Session ID: 262e593b04ebbe2add33d66ef50255f4
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>14:01:35 PM</td>
+<td>10:01:34 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Search the any of the Product and add into the Cart and Place the Order</a>
 <div class="">
@@ -468,7 +455,7 @@ Session ID: 262e593b04ebbe2add33d66ef50255f4
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>14:01:35 PM</td>
+<td>10:01:34 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Search the any of the Product and add into the Cart and Place the Order</a>
 <div class="">
@@ -492,7 +479,7 @@ Session ID: 262e593b04ebbe2add33d66ef50255f4
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -501,12 +488,12 @@ Session ID: 262e593b04ebbe2add33d66ef50255f4
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="name">org.openqa.selenium.SessionNotCreatedException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<h4>org.openqa.selenium.SessionNotCreatedException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -520,11 +507,47 @@ Session ID: 262e593b04ebbe2add33d66ef50255f4
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>14:02:44 PM</td>
+<td>10:01:34 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='6'>And Click on cart page proceed the Product to Order Page</a>
+<a href="#" class="linked" test-id='1' id='3'>Given Check Already Logged in Browser was Opened</a>
 <div class="">
-<span class="badge badge-default">Medicine flow to check and place the order.Search the any of the Product and add into the Cart and Place the Order.And Click on cart page proceed the Product to Order Page</span>
+<span class="badge badge-default">Medicine flow to check and place the order.Search the any of the Product and add into the Cart and Place the Order.Given Check Already Logged in Browser was Opened</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:02:48 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>stepDefinition.Hooks.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Medicine flow to check and place the order.Search the any of the Product and add into the Cart and Place the Order.stepDefinition.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 </div>
 </td>
 </tr>

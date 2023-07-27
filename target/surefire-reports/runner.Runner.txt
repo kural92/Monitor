@@ -1,16 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: runner.Runner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 117.922 sec <<< FAILURE! - in runner.Runner
-Search the any of the Product and add into the Cart and Place the Order(Medicine flow to check and place the order)  Time elapsed: 109.824 sec  <<< ERROR!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <div class="text">...</div> is not clickable at point (1132, 44). Other element would receive the click: <iframe title="notification-frame-22a357429" name="notification-frame-22a357429" id="webklipper-publisher-widget-container-notification-frame" frameborder="0" marginheight="0" marginwidth="0" style="display: block; position: fixed; z-index: 16776272; left: -1000px; top: -1000px; width: 100%; visibility: visible; overflow: visible; height: 61.5185px; transform: translate(1000px, 1000px);" data-notification-layout-id="~fg00aad" data-notification-layout-name="undefined"></iframe>
-  (Session info: chrome=114.0.5735.248)
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 82.504 sec <<< FAILURE! - in runner.Runner
+Search the any of the Product and add into the Cart and Place the Order(Medicine flow to check and place the order)  Time elapsed: 74.742 sec  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: unknown error: cannot connect to chrome at localhost:9988
+from chrome not reachable 
+Host info: host: 'NMSPC467', ip: '192.168.108.21'
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [262e593b04ebbe2add33d66ef50255f4, clickElement {id=7461A264F37D6E6F66B00193916B2C3A_element_1861}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f...}, goog:chromeOptions: {debuggerAddress: localhost:9988}, pageLoadStrategy: normal, platformName: any, proxy: Proxy(), se:cdp: ws://localhost:9988/devtool..., se:cdpVersion: 114.0.5735.248, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on any (262e593b04ebbe2add33d66ef50255f4)] -> xpath: //div[@class='text']]
-Session ID: 262e593b04ebbe2add33d66ef50255f4
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-notifications, --remote-allow-origins=*], debuggerAddress: localhost:9988, extensions: []}}]}]
+
+Search the any of the Product and add into the Cart and Place the Order(Medicine flow to check and place the order)  Time elapsed: 74.742 sec  <<< ERROR!
+java.lang.NullPointerException
 

@@ -43,15 +43,20 @@ public class MedicineFlow1 extends BaseClass {
 		  System.out.println("The Logged User was : "+user);
 		  System.err.println("The Already logged browser was opened successfuly ");
 		  
-		  Thread.sleep(1000);
-			try {
-				driver.switchTo().frame(1);
-				driver.findElement(By.xpath("//i[@class='we_close']")).click();
-				driver.switchTo().defaultContent();
-			} catch (Exception e) {
-				
-				driver.switchTo().defaultContent();
-			}
+		  Thread.sleep(3000);
+		  paymentFailure_Pop_up();
+		  
+//			try {
+//				driver.switchTo().frame("webklipper-publisher-widget-container-notification-frame");
+//				System.err.println("Switched to frame");
+//				driver.findElement(By.xpath("//i[@class='we_close']|/html/body/div/div/div[1]/div/div[4]")).click();
+//				driver.switchTo().defaultContent();
+//				System.err.println("Switched out of frame");
+//			} catch (Exception e) {
+//				
+//				driver.switchTo().defaultContent();
+//				System.err.println("Switched out of frame 11");
+//			}
 	}
 
 	@When("Clear the Cart and  Search the Product")
@@ -106,7 +111,7 @@ public class MedicineFlow1 extends BaseClass {
 		SearchResultPage searchResultPage = new SearchResultPage(driver);
 		
 		Thread.sleep(1000);
-		
+		paymentFailure_Pop_up();
 		
 		js.executeScript("window.scrollBy(0,200)");
 	
@@ -132,31 +137,44 @@ public class MedicineFlow1 extends BaseClass {
 		
 		Thread.sleep(3000);
 		////div[@class='close tablecell'] webklipper-publisher-widget-container-notification-frame
-			
+	/*		
 			if (!(driver.findElements(By.xpath("//button[contains(text(),'Try Again')]")).size()==0)) {
 				driver.switchTo().frame("webklipper-publisher-widget-container-notification-frame");
 				System.out.println("Switched to Frame");
-				driver.findElement(By.xpath("//i[@class='we_close']|//div[@class='close tablecell']")).click();
+				
+				//|//i[@class='we_close']|//div[@class='close tablecell']
+				driver.findElement(By.xpath("/html/body/div/div/div[1]/div/div[4]/i")).click();
 				driver.switchTo().defaultContent();
 				System.out.println("out of Frame");
 			} else {
 				driver.switchTo().defaultContent();
 				System.out.println("out of Frame");
 			}
+			
+			*/
 			JavascriptExecutor js = (JavascriptExecutor)driver;
 			js.executeScript("window.scrollBy(300,0)");
 		
+			paymentFailure_Pop_up();
 		
 	//	Thread.sleep(1000);
+			try {
 		waitForElement(cartPage.getCart_btn());
 		cartPage.getCart_btn().click();
-		
-//	Thread.sleep(3000);
+			}catch (Exception e) {
+			driver.navigate().to("https://www.netmeds.com/checkout/cart");
+			}
+			
+	Thread.sleep(3000);
 		waitForElement(cartPage.getCart_proceedBtn());
 		cartPage.getCart_proceedBtn().click();
 		Thread.sleep(1000);
+		
+		
 		driver.navigate().to("https://www.netmeds.com/checkout/upload-rx");
-//		try {
+
+		
+		//		try {
 //			driver.switchTo().frame(1);
 //			//if (!(driver.findElements(By.xpath("//div[@class='close tablecell']")).size()==0)) {
 //			Thread.sleep(3000);
@@ -353,7 +371,23 @@ public class MedicineFlow1 extends BaseClass {
 		
 	}
 	
-	
+	public void paymentFailure_Pop_up() throws Throwable {
+		
+		
+		 Thread.sleep(3000);
+			try {
+				driver.switchTo().frame("webklipper-publisher-widget-container-notification-frame");
+				System.err.println("Switched to frame");
+				driver.findElement(By.xpath("//i[@class='we_close']|/html/body/div/div/div[1]/div/div[4]")).click();
+				driver.switchTo().defaultContent();
+				System.err.println("Switched out of frame");
+			} catch (Exception e) {
+				
+				driver.switchTo().defaultContent();
+				System.err.println("Switched out of frame 11");
+			}
+
+	}
 	
 	
 	

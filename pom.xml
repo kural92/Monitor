@@ -27,7 +27,9 @@
                 <version>2.19.1</version>
 				<configuration>
 					<includes>
-					<include>runner.Runner.java</include></includes>
+					<include>runner.Runner.java</include>
+				
+					</includes>
 				</configuration>
 			</plugin>
 	
