@@ -1,12 +1,17 @@
 package stepDefinition;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Base.BaseClass;
 import Page_Manager.PageObjectManager;
@@ -127,7 +132,8 @@ public void click_on_search_medicine_search_and_add_medicine() throws Throwable 
 	} else {
 	}
 
-	Thread.sleep(3000);
+	Thread.sleep(2000);
+	waitForElement(homePage.getUpload_Continue_btn());
 	homePage.getUpload_Continue_btn().click();
 	Thread.sleep(2000);
 	homePage.getM2_Search_TextBox().sendKeys("Rxtor");
@@ -270,7 +276,12 @@ Thread.sleep(3000);
 
 }
 
-
+public void waitForElement(WebElement element) {
+	
+	WebDriverWait waitt = new WebDriverWait(driver, Duration.ofSeconds(30) );
+	waitt.until(ExpectedConditions.visibilityOf(element));
+	
+}
 
 
 }

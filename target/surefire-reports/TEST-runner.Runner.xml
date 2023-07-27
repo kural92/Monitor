@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runner.Runner" time="82.504" tests="2" errors="2" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runner.Runner" time="549.394" tests="4" errors="2" skipped="0" failures="0">
   <properties>
     <property name="JOB_NAME" value="Medicine 1 Flow"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="RUN_TESTS_DISPLAY_URL" value="http://localhost:8080/job/Medicine%201%20Flow/362/display/redirect?page=tests"/>
+    <property name="RUN_TESTS_DISPLAY_URL" value="http://localhost:8080/job/Medicine%201%20Flow/365/display/redirect?page=tests"/>
     <property name="NUMBER_OF_PROCESSORS" value="4"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="JENKINS_HOME" value="C:\Users\Netmeds\.jenkins"/>
@@ -12,7 +12,7 @@
     <property name="HUDSON_SERVER_COOKIE" value="1a3f2d9b080a5a44"/>
     <property name="POM_ARTIFACTID" value="Monitor"/>
     <property name="os.name" value="Windows 10"/>
-    <property name="EXECUTOR_NUMBER" value="0"/>
+    <property name="EXECUTOR_NUMBER" value="1"/>
     <property name="sun.desktop" value="windows"/>
     <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
     <property name="POM_DISPLAYNAME" value="Monitor"/>
@@ -28,8 +28,8 @@
     <property name="PROMPT" value="$P$G"/>
     <property name="user.language" value="en"/>
     <property name="JOB_BASE_NAME" value="Medicine 1 Flow"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/Medicine%201%20Flow/362/display/redirect?page=changes"/>
-    <property name="BUILD_DISPLAY_NAME" value="#362"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/Medicine%201%20Flow/365/display/redirect?page=changes"/>
+    <property name="BUILD_DISPLAY_NAME" value="#365"/>
     <property name="OneDrive" value="C:\Users\Netmeds\OneDrive"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.16.1\bin"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
@@ -40,7 +40,7 @@
     <property name="USERNAME" value="Netmeds"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="NODE_NAME" value="built-in"/>
-    <property name="BUILD_ID" value="362"/>
+    <property name="BUILD_ID" value="365"/>
     <property name="CLIENTNAME" value="VITLAP170"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
@@ -56,11 +56,11 @@
     <property name="java.home" value="C:\Program Files\Java\jdk-11.0.16.1"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="os.version" value="10.0"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/Medicine%201%20Flow/362/display/redirect"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/Medicine%201%20Flow/365/display/redirect"/>
     <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
     <property name="TMP" value="C:\Users\Netmeds\AppData\Local\Temp"/>
     <property name="path.separator" value=";"/>
-    <property name="RUN_ARTIFACTS_DISPLAY_URL" value="http://localhost:8080/job/Medicine%201%20Flow/362/display/redirect?page=artifacts"/>
+    <property name="RUN_ARTIFACTS_DISPLAY_URL" value="http://localhost:8080/job/Medicine%201%20Flow/365/display/redirect?page=artifacts"/>
     <property name="java.vm.version" value="11.0.16.1+1-LTS-1"/>
     <property name="user.variant" value=""/>
     <property name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
@@ -79,7 +79,7 @@
     <property name="POM_GROUPID" value="Cucumber"/>
     <property name="user.home" value="C:\Users\Netmeds"/>
     <property name="PUBLIC" value="C:\Users\Public"/>
-    <property name="BUILD_TAG" value="jenkins-Medicine 1 Flow-362"/>
+    <property name="BUILD_TAG" value="jenkins-Medicine 1 Flow-365"/>
     <property name="JENKINS_SERVER_COOKIE" value="1a3f2d9b080a5a44"/>
     <property name="HUDSON_URL" value="http://localhost:8080/"/>
     <property name="ProgramData" value="C:\ProgramData"/>
@@ -94,13 +94,13 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="maven.home" value="C:\Program Files\apache-maven-3.6.3"/>
     <property name="java.class.path" value="C:\Users\Netmeds\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.14.jar;C:\Program Files\apache-maven-3.6.3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\apache-maven-3.6.3/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Program Files\apache-maven-3.6.3 C:\Users\Netmeds\.jenkins\war\WEB-INF\lib\remoting-3085.vc4c6977c075a.jar C:\Users\Netmeds\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.14.jar C:\Users\Netmeds\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.14.jar 65355"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Program Files\apache-maven-3.6.3 C:\Users\Netmeds\.jenkins\war\WEB-INF\lib\remoting-3085.vc4c6977c075a.jar C:\Users\Netmeds\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.14.jar C:\Users\Netmeds\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.14.jar 51730"/>
     <property name="Path" value="C:\Program Files\Java\jdk-11.0.16.1\/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-11.0.16.1\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files (x86)\Google\Chrome\Application;C:\Program Files\Git\cmd;C:\Users\Netmeds\AppData\Local\Microsoft\WindowsApps;"/>
     <property name="jdk.debug" value="release"/>
     <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="PATH+JDK" value="C:\Program Files\Java\jdk-11.0.16.1\/bin"/>
-    <property name="SESSIONNAME" value="RDP-Tcp#1"/>
+    <property name="SESSIONNAME" value="RDP-Tcp#18"/>
     <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 158 Stepping 11, GenuineIntel"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="M2_HOME" value="C:\Program Files\apache-maven-3.6.3"/>
@@ -114,7 +114,7 @@
     <property name="PATH+MAVEN" value="C:\Program Files\apache-maven-3.6.3/bin"/>
     <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="BUILD_URL" value="http://localhost:8080/job/Medicine%201%20Flow/362/"/>
+    <property name="BUILD_URL" value="http://localhost:8080/job/Medicine%201%20Flow/365/"/>
     <property name="SystemRoot" value="C:\WINDOWS"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -125,7 +125,7 @@
     <property name="MAVEN_HOME" value="C:\Program Files\apache-maven-3.6.3"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="362"/>
+    <property name="BUILD_NUMBER" value="365"/>
     <property name="PROCESSOR_REVISION" value="9e0b"/>
     <property name="JENKINS_URL" value="http://localhost:8080/"/>
     <property name="ProgramW6432" value="C:\Program Files"/>
@@ -142,63 +142,148 @@
     <property name="DriverData" value="C:\Windows\System32\Drivers\DriverData"/>
     <property name="java.vendor.version" value="18.9"/>
   </properties>
-  <testcase name="Search the any of the Product and add into the Cart and Place the Order" classname="Medicine flow to check and place the order" time="74.742">
-    <error message="Could not start a new session. Response code 500. Message: unknown error: cannot connect to chrome at localhost:9988&#10;from chrome not reachable &#10;Host info: host: &apos;NMSPC467&apos;, ip: &apos;192.168.108.21&apos;&#10;Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-notifications, --remote-allow-origins=*], debuggerAddress: localhost:9988, extensions: []}}]}]" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: unknown error: cannot connect to chrome at localhost:9988
-from chrome not reachable 
-Host info: host: 'NMSPC467', ip: '192.168.108.21'
+  <testcase name="Upload Prescription and Search medicine" classname="Medicine Flow 2" time="186.469"/>
+  <testcase name="Upload prescription and get call on Netmedsd" classname="Medicine Flow 2" time="115.91">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;app&apos;]/main/app-m2/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div/div/form/div[1]/ul/li[1]/label/input&quot;}&#10;  (Session info: chrome=115.0.5790.110)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [82899a4fc23cec1efeceba2cbf52271d, findElement {using=xpath, value=//*[@id=&apos;app&apos;]/main/app-m2/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div/div/form/div[1]/ul/li[1]/label/input}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f...}, goog:chromeOptions: {debuggerAddress: localhost:9988}, pageLoadStrategy: normal, platformName: any, proxy: Proxy(), se:cdp: ws://localhost:9988/devtool..., se:cdpVersion: 115.0.5790.110, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 82899a4fc23cec1efeceba2cbf52271d" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='app']/main/app-m2/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div/div/form/div[1]/ul/li[1]/label/input"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-notifications, --remote-allow-origins=*], debuggerAddress: localhost:9988, extensions: []}}]}]
+Command: [82899a4fc23cec1efeceba2cbf52271d, findElement {using=xpath, value=//*[@id='app']/main/app-m2/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div/div/form/div[1]/ul/li[1]/label/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f...}, goog:chromeOptions: {debuggerAddress: localhost:9988}, pageLoadStrategy: normal, platformName: any, proxy: Proxy(), se:cdp: ws://localhost:9988/devtool..., se:cdpVersion: 115.0.5790.110, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 82899a4fc23cec1efeceba2cbf52271d
 </error>
     <system-out><![CDATA[
-@tag @tag1
-Scenario: Search the any of the Product and add into the Cart and Place the Order # src/test/resources/M1.feature:8
-  Given Check Already Logged in Browser was Opened                                # stepDefinition.MedicineFlow1.check_already_logged_in_browser_was_opened()
-      org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot connect to chrome at localhost:9988
-from chrome not reachable 
-Host info: host: 'NMSPC467', ip: '192.168.108.21'
+@tag @tag2
+Scenario Outline: Upload prescription and get call on Netmedsd # src/test/resources/M2.feature:17
+The Logged User was : Test Test
+  Given Check the Browser was already logged in                # stepDefinition.MedicineFlow2.check_the_browser_was_already_logged_in()
+There is no product in cart to clear
+  And clear the cart                                           # stepDefinition.MedicineFlow2.clear_the_cart()
+  When click on Upload and Upload Prescription                 # stepDefinition.MedicineFlow2.click_on_upload_and_upload_prescription()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='app']/main/app-m2/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div/div/form/div[1]/ul/li[1]/label/input"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-notifications, --remote-allow-origins=*], debuggerAddress: localhost:9988, extensions: []}}]}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+Command: [82899a4fc23cec1efeceba2cbf52271d, findElement {using=xpath, value=//*[@id='app']/main/app-m2/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div/div/form/div[1]/ul/li[1]/label/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f...}, goog:chromeOptions: {debuggerAddress: localhost:9988}, pageLoadStrategy: normal, platformName: any, proxy: Proxy(), se:cdp: ws://localhost:9988/devtool..., se:cdpVersion: 115.0.5790.110, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 82899a4fc23cec1efeceba2cbf52271d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:227)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:107)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:87)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
-	at stepDefinition.MedicineFlow1.check_already_logged_in_browser_was_opened(MedicineFlow1.java:35)
-	at âœ½.Check Already Logged in Browser was Opened(file:///C:/Users/Netmeds/eclipse-workspace/Monitor/src/test/resources/M1.feature:9)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy22.sendKeys(Unknown Source)
+	at stepDefinition.MedicineFlow2.click_on_upload_and_upload_prescription(MedicineFlow2.java:115)
+	at âœ½.click on Upload and Upload Prescription(file:///C:/Users/Netmeds/eclipse-workspace/Monitor/src/test/resources/M2.feature:20)
 
-  When Clear the Cart and  Search the Product                                     # stepDefinition.MedicineFlow1.clear_the_cart_and_search_the_product()
-  And click on Add to the cart and add the product                                # stepDefinition.MedicineFlow1.click_on_add_to_the_cart_and_add_the_product()
-  And Click on cart page proceed the Product to Order Page                        # stepDefinition.MedicineFlow1.click_on_cart_page_proceed_the_product_to_order_page()
-  Then From Order page choose delivery adress and click on Pay                    # stepDefinition.MedicineFlow1.from_order_page_choose_delivery_adress_and_click_on_pay()
-  And check Payment page was landed                                               # stepDefinition.MedicineFlow1.check_payment_page_was_landed()
-  And Verify the payment status of the order                                      # stepDefinition.MedicineFlow1.verify_the_payment_status_of_the_order()
-      java.lang.NullPointerException
-	at stepDefinition.Hooks.tearDown(Hooks.java:58)
+  And Click on Get call from Netmeds and continue              # stepDefinition.MedicineFlow2.click_on_get_call_from_netmeds_and_continue()
+  Then Click on confirm and Place the Order                    # stepDefinition.MedicineFlow2.click_on_confirm_and_place_the_order()
+  And Track the order and cancel the order                     # stepDefinition.MedicineFlow2.track_the_order_and_cancel_the_order()
 
+    Embedding Monitor_ss [image/png 670243 bytes]
+
+2
+1
+After scenario executed successfully
 ]]></system-out>
-    <system-err><![CDATA[Jul 27, 2023 10:01:34 AM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+    <system-err><![CDATA[Jul 27, 2023 3:04:24 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
 INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+Jul 27, 2023 3:04:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 115, so returning the closest version found: 114
+The Already logged browser was opened successfuly 
 FAILED
-18c28ef0-bfc7-46b0-b3ad-2982edcd14a3
-Search the any of the Product and add into the Cart and Place the Order
+0c7556a1-03bd-4bf6-9de3-fdf9b698157a
+Upload prescription and get call on Netmedsd
 class io.cucumber.java.Scenario
+1
 ]]></system-err>
   </testcase>
-  <testcase name="Search the any of the Product and add into the Cart and Place the Order" classname="Medicine flow to check and place the order" time="74.742">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+  <testcase name="Saved Prescription and Search medicine" classname="Medicine Flow 2" time="142.414"/>
+  <testcase name="Saved prescription and Get call from netmeds" classname="Medicine Flow 2" time="96.723">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Track Order&apos;)]&quot;}&#10;  (Session info: chrome=115.0.5790.110)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [7056a0cfa68bdf48849614240a9e99a6, findElement {using=xpath, value=//button[contains(text(),&apos;Track Order&apos;)]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f...}, goog:chromeOptions: {debuggerAddress: localhost:9988}, pageLoadStrategy: normal, platformName: any, proxy: Proxy(), se:cdp: ws://localhost:9988/devtool..., se:cdpVersion: 115.0.5790.110, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7056a0cfa68bdf48849614240a9e99a6" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(),'Track Order')]"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7056a0cfa68bdf48849614240a9e99a6, findElement {using=xpath, value=//button[contains(text(),'Track Order')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f...}, goog:chromeOptions: {debuggerAddress: localhost:9988}, pageLoadStrategy: normal, platformName: any, proxy: Proxy(), se:cdp: ws://localhost:9988/devtool..., se:cdpVersion: 115.0.5790.110, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7056a0cfa68bdf48849614240a9e99a6
 </error>
+    <system-out><![CDATA[
+@tag @tag4
+Scenario Outline: Saved prescription and Get call from netmeds # src/test/resources/M2.feature:34
+The Logged User was : Test Test
+  Given Check the Browser was already logged in                # stepDefinition.MedicineFlow2.check_the_browser_was_already_logged_in()
+  When click on Upload and Saved Prescription                  # stepDefinition.MedicineFlow2.click_on_upload_and_saved_prescription()
+  And Click on Get call from Netmeds and continue              # stepDefinition.MedicineFlow2.click_on_get_call_from_netmeds_and_continue()
+  Then Click on confirm and Place the Order                    # stepDefinition.MedicineFlow2.click_on_confirm_and_place_the_order()
+  And Track the order and cancel the order                     # stepDefinition.MedicineFlow2.track_the_order_and_cancel_the_order()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(),'Track Order')]"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7056a0cfa68bdf48849614240a9e99a6, findElement {using=xpath, value=//button[contains(text(),'Track Order')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f...}, goog:chromeOptions: {debuggerAddress: localhost:9988}, pageLoadStrategy: normal, platformName: any, proxy: Proxy(), se:cdp: ws://localhost:9988/devtool..., se:cdpVersion: 115.0.5790.110, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7056a0cfa68bdf48849614240a9e99a6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at stepDefinition.MedicineFlow2.track_the_order_and_cancel_the_order(MedicineFlow2.java:192)
+	at âœ½.Track the order and cancel the order(file:///C:/Users/Netmeds/eclipse-workspace/Monitor/src/test/resources/M2.feature:39)
+
+
+    Embedding Monitor_ss [image/png 117524 bytes]
+
+2
+1
+After scenario executed successfully
+]]></system-out>
+    <system-err><![CDATA[Jul 27, 2023 3:08:42 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+Jul 27, 2023 3:08:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 115, so returning the closest version found: 114
+The Already logged browser was opened successfuly 
+FAILED
+f6fa1e17-c41e-4418-aac0-1e11ceb446ca
+Saved prescription and Get call from netmeds
+class io.cucumber.java.Scenario
+1
+]]></system-err>
   </testcase>
 </testsuite>

@@ -1,17 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: runner.Runner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 82.504 sec <<< FAILURE! - in runner.Runner
-Search the any of the Product and add into the Cart and Place the Order(Medicine flow to check and place the order)  Time elapsed: 74.742 sec  <<< ERROR!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: unknown error: cannot connect to chrome at localhost:9988
-from chrome not reachable 
-Host info: host: 'NMSPC467', ip: '192.168.108.21'
+Tests run: 4, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 549.394 sec <<< FAILURE! - in runner.Runner
+Upload prescription and get call on Netmedsd(Medicine Flow 2)  Time elapsed: 115.91 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='app']/main/app-m2/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div/div/form/div[1]/ul/li[1]/label/input"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-notifications, --remote-allow-origins=*], debuggerAddress: localhost:9988, extensions: []}}]}]
+Command: [82899a4fc23cec1efeceba2cbf52271d, findElement {using=xpath, value=//*[@id='app']/main/app-m2/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div/div/form/div[1]/ul/li[1]/label/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f...}, goog:chromeOptions: {debuggerAddress: localhost:9988}, pageLoadStrategy: normal, platformName: any, proxy: Proxy(), se:cdp: ws://localhost:9988/devtool..., se:cdpVersion: 115.0.5790.110, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 82899a4fc23cec1efeceba2cbf52271d
 
-Search the any of the Product and add into the Cart and Place the Order(Medicine flow to check and place the order)  Time elapsed: 74.742 sec  <<< ERROR!
-java.lang.NullPointerException
+Saved prescription and Get call from netmeds(Medicine Flow 2)  Time elapsed: 96.723 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(),'Track Order')]"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7056a0cfa68bdf48849614240a9e99a6, findElement {using=xpath, value=//button[contains(text(),'Track Order')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f...}, goog:chromeOptions: {debuggerAddress: localhost:9988}, pageLoadStrategy: normal, platformName: any, proxy: Proxy(), se:cdp: ws://localhost:9988/devtool..., se:cdpVersion: 115.0.5790.110, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7056a0cfa68bdf48849614240a9e99a6
 
