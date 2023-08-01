@@ -250,11 +250,13 @@ public class MedicineFlow1 extends BaseClass {
 //		driver.switchTo().defaultContent();
 //
 //	}
+	Actions acc = new Actions(driver);
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	js.executeScript("window.scrollBy(0,200)");
 	
 		Thread.sleep(3000);
 	waitForElement(orderReviewPage.getPay_btn());
+	acc.moveToElement(orderReviewPage.getPay_btn()).build().perform();
 		orderReviewPage.getPay_btn().click();
 		Thread.sleep(3000);
 	
