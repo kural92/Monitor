@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"> Webpage monitor Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 1, 2023 11:01:24 AM</span></a>
+<a href="#"><span class="badge badge-primary">Aug 1, 2023 02:01:24 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 1, 2023 11:01:24 AM</h3>
+<h3>Aug 1, 2023 02:01:24 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 1, 2023 11:05:35 AM</h3>
+<h3>Aug 1, 2023 02:05:07 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Medicine flow to check and place the order":250.14
+"Medicine flow to check and place the order":221.612
 };
 </script>
 <div class="row">
@@ -276,7 +276,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Medicine flow to check and place the order</p>
             <p class="text-sm">
-              <span>11:01:25 AM</span> / <span>00:04:10:140</span>
+              <span>2:01:25 PM</span> / <span>00:03:41:612</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -285,9 +285,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Medicine flow to check and place the order</h5>
-<span class='badge badge-success'>08.01.2023 11:01:25 AM</span>
-<span class='badge badge-danger'>08.01.2023 11:05:35 AM</span>
-<span class='badge badge-default'>00:04:10:140</span>
+<span class='badge badge-success'>08.01.2023 2:01:25 PM</span>
+<span class='badge badge-danger'>08.01.2023 2:05:07 PM</span>
+<span class='badge badge-default'>00:03:41:612</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -330,15 +330,15 @@ eventsCount: 5,
               <div class="step fail-bg" title="stepDefinition.MedicineFlow1.from_order_page_choose_delivery_adress_and_click_on_pay()">
                 <span>Then From Order page choose delivery adress and click on Pay</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="btn-checkout btn btn_to_checkout m-0 ml-1 ng-star-inserted" id="pay-button" type="button">...</button> is not clickable at point (1103, 375). Other element would receive the click: <div _ngcontent-qqp-c1="" class="overlay ng-tns-c1-0 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color:rgba(51, 51, 51, 0.8);position:fixed;z-index:99999;0:background-color;1:position;2:z-index;background-color:rgba(51, 51, 51, 0.8);position:fixed;z-index:99999;">...</div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#pay\-button"}
   (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8bff2c0ec8d193e14c035dd70d22d076, clickElement {id=9761B6FD8B3C4394653428D544091BD6_element_2441}]
+Command: [b39facc6c378fc720d7ca5319d484d4e, findElement {using=id, value=pay-button}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f...}, goog:chromeOptions: {debuggerAddress: localhost:9988}, pageLoadStrategy: normal, platformName: any, proxy: Proxy(), se:cdp: ws://localhost:9988/devtool..., se:cdpVersion: 115.0.5790.110, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on any (8bff2c0ec8d193e14c035dd70d22d076)] -> id: pay-button]
-Session ID: 8bff2c0ec8d193e14c035dd70d22d076
+Session ID: b39facc6c378fc720d7ca5319d484d4e
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -350,15 +350,14 @@ Session ID: 8bff2c0ec8d193e14c035dd70d22d076
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy22.click(Unknown Source)
-	at stepDefinition.MedicineFlow1.from_order_page_choose_delivery_adress_and_click_on_pay(MedicineFlow1.java:258)
+	at stepDefinition.MedicineFlow1.from_order_page_choose_delivery_adress_and_click_on_pay(MedicineFlow1.java:264)
 	at ?.From Order page choose delivery adress and click on Pay(file:///C:/Users/Netmeds/eclipse-workspace/Monitor/src/test/resources/M1.feature:13)
 </textarea>
       
@@ -432,7 +431,7 @@ Session ID: 8bff2c0ec8d193e14c035dd70d22d076
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>11:01:25 AM</td>
+<td>14:01:25 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Search the any of the Product and add into the Cart and Place the Order</a>
 <div class="">
@@ -468,7 +467,7 @@ Session ID: 8bff2c0ec8d193e14c035dd70d22d076
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>11:01:25 AM</td>
+<td>14:01:25 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Search the any of the Product and add into the Cart and Place the Order</a>
 <div class="">
@@ -501,12 +500,12 @@ Session ID: 8bff2c0ec8d193e14c035dd70d22d076
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<h4>org.openqa.selenium.NoSuchElementException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -520,7 +519,7 @@ Session ID: 8bff2c0ec8d193e14c035dd70d22d076
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>11:05:20 AM</td>
+<td>14:04:20 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='7'>Then From Order page choose delivery adress and click on Pay</a>
 <div class="">

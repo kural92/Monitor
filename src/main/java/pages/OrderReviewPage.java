@@ -55,7 +55,7 @@ public class OrderReviewPage {
 		
 		// *************************** Pay Button ********************************
 		
-		@FindBy(id="pay-button")//(id="pay-button")
+		@FindBy(id = "pay-button")//(id="pay-button")
 		private WebElement Pay_btn;
 		public WebElement getPay_btn() {
 			return Pay_btn;

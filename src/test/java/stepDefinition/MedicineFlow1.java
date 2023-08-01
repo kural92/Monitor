@@ -235,8 +235,10 @@ public class MedicineFlow1 extends BaseClass {
 			Thread.sleep(1000);
 		} else {
 	System.err.println("The Address was already selected");
+	Thread.sleep(1000);
 		}
 	}catch (Exception e) {
+		Thread.sleep(1000);
 		// TODO: handle exception
 	}
 //	Thread.sleep(3000);
@@ -258,6 +260,11 @@ public class MedicineFlow1 extends BaseClass {
 	waitForElement(orderReviewPage.getPay_btn());
 	acc.moveToElement(orderReviewPage.getPay_btn()).build().perform();
 		orderReviewPage.getPay_btn().click();
+		try {
+			orderReviewPage.getPay_btn().click();
+		}catch (Exception e)  {
+			System.err.println("Unalble to click the Pay Button");
+		}
 		Thread.sleep(3000);
 	
 	}
