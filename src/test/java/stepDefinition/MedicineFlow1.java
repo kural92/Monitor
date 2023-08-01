@@ -157,7 +157,7 @@ public class MedicineFlow1 extends BaseClass {
 		
 			paymentFailure_Pop_up();
 		
-	//	Thread.sleep(1000);
+		Thread.sleep(1000);
 			try {
 		waitForElement(cartPage.getCart_btn());
 		cartPage.getCart_btn().click();
@@ -191,7 +191,7 @@ public class MedicineFlow1 extends BaseClass {
 		
 		//////////   
 		
-		//Thread.sleep(2000);
+		Thread.sleep(2000);
 		waitForElement(driver.findElement(By.xpath("(//input[@id='externaldoctr'])[2]")));
 		if (driver.findElement(By.xpath("(//input[@id='externaldoctr'])[2]")).isSelected()) {
 			
@@ -200,7 +200,7 @@ public class MedicineFlow1 extends BaseClass {
 		}else {
 			driver.findElement(By.xpath("(//input[@id='externaldoctr'])[2]")).click();
 		}
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		waitForElement(driver.findElement(By.xpath("//button[contains(text(),'Review Order')]")));
 		driver.findElement(By.xpath("//button[contains(text(),'Review Order')]")).click();
 //		Thread.sleep(3000);

@@ -118,7 +118,7 @@ public void click_on_upload_and_upload_prescription() throws Throwable {
 	homePage.getUpload_btn().click();
 	Thread.sleep(2000);
 	homePage.getUpload_Prescription_btn().sendKeys("C:\\Users\\Netmeds\\eclipse-workspace\\Monitor\\Prescription\\APIS.png");
-
+	Thread.sleep(2000);
 	
 }
 
