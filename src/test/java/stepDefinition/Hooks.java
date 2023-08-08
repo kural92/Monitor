@@ -30,7 +30,7 @@ import io.cucumber.java.Scenario;
 
 public class Hooks extends BaseClass{
 	
-	
+	Scenario scenario = null;
 	@After(order=1)
 	public void tearDown(Scenario scenario) throws Throwable {
 		
@@ -56,7 +56,7 @@ public class Hooks extends BaseClass{
 	        {
 	       
 			 byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-             scenario.attach(screenshot, "image/png", "Monitor_ss");
+             scenario.attach(screenshot, "image/png", scenario.getName());
 	        
              Thread.sleep(5000);
              BaseClass.writeData("Mail", 1, 1, "2");
@@ -175,7 +175,7 @@ public class Hooks extends BaseClass{
 	      MimeBodyPart attachmentBodyPart = new MimeBodyPart();
 	      String file = System.getProperty("user.dir")+"/Report/PdfReport/Extentpdf.pdf";  // File To Attach
 	      
-	      String file1 = System.getProperty("user.dir")+"/ScreenShot/Monitor_ss.png";
+	      String file1 = System.getProperty("user.dir")+"/ScreenShot/Search the any of the Product and add into the Cart and Place the Order.png";
 	      BodyPart attachmentBodyPart1 = new MimeBodyPart();
 	      DataSource source1 = new FileDataSource(file1);
 	      // messageBodyPart.setDataHandler(new DataHandler(source));

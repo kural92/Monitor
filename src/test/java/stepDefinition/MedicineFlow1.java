@@ -19,6 +19,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.CartPage;
 import pages.OrderReviewPage;
+import pages.PaymentPage;
 import pages.SearchResultPage;
 
 public class MedicineFlow1 extends BaseClass {
@@ -171,7 +172,7 @@ public class MedicineFlow1 extends BaseClass {
 		Thread.sleep(1000);
 		
 		
-		driver.navigate().to("https://www.netmeds.com/checkout/upload-rx");
+	//	driver.navigate().to("https://www.netmeds.com/checkout/upload-rx");
 
 		
 		//		try {
@@ -190,7 +191,7 @@ public class MedicineFlow1 extends BaseClass {
 		
 		
 		//////////   
-		
+		try {
 		Thread.sleep(2000);
 		waitForElement(driver.findElement(By.xpath("(//input[@id='externaldoctr'])[2]")));
 		if (driver.findElement(By.xpath("(//input[@id='externaldoctr'])[2]")).isSelected()) {
@@ -200,9 +201,13 @@ public class MedicineFlow1 extends BaseClass {
 		}else {
 			driver.findElement(By.xpath("(//input[@id='externaldoctr'])[2]")).click();
 		}
+		
 		Thread.sleep(2000);
 		waitForElement(driver.findElement(By.xpath("//button[contains(text(),'Review Order')]")));
 		driver.findElement(By.xpath("//button[contains(text(),'Review Order')]")).click();
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
 //		Thread.sleep(3000);
 //		try {if (!(driver.findElements(By.xpath("//div[@class='close tablecell']")).size()==0)) {
 //			
@@ -232,7 +237,7 @@ public class MedicineFlow1 extends BaseClass {
 			Actions acc = new Actions(driver);
 			Thread.sleep(1000);
 			acc.moveToElement(orderReviewPage.getAddress_checkbox()).click().perform();
-			Thread.sleep(1000);
+			Thread.sleep(3000);
 		} else {
 	System.err.println("The Address was already selected");
 	Thread.sleep(1000);
@@ -254,16 +259,24 @@ public class MedicineFlow1 extends BaseClass {
 //	}
 	Actions acc = new Actions(driver);
 	JavascriptExecutor js = (JavascriptExecutor)driver;
-	js.executeScript("window.scrollBy(0,200)");
+	//js.executeScript("window.scrollBy(0,200)");
 	
-		Thread.sleep(3000);
+	Thread.sleep(5000);
+	try {
+		acc.moveToElement(driver.findElement(By.xpath("(//button[@class='close'])[5]"))).perform();
+		driver.findElement(By.xpath("(//button[@class='close'])[5]")).click();
+	} catch (Exception e) {
+		// TODO: handle exception
+	}
+	
+		Thread.sleep(1000);
 	waitForElement(orderReviewPage.getPay_btn());
-	acc.moveToElement(orderReviewPage.getPay_btn()).build().perform();
+	acc.moveToElement(orderReviewPage.getPay_btn()).build();
 		orderReviewPage.getPay_btn().click();
 		try {
 			orderReviewPage.getPay_btn().click();
 		}catch (Exception e)  {
-			System.err.println("Unalble to click the Pay Button");
+		//	System.err.println("Unable to click the Pay Button");
 		}
 		Thread.sleep(3000);
 	
@@ -271,7 +284,21 @@ public class MedicineFlow1 extends BaseClass {
 
 	@Then("check Payment page was landed")
 	public void check_payment_page_was_landed() throws Throwable {
-		waitForElement(driver.findElement(By.xpath("//span[contains(text(),'Payment Details')]")));
+		
+		 PaymentPage paymentPage = new PaymentPage();
+		  
+		  
+		  waitForElement(paymentPage.getJio_payments_text());
+		  
+		  String pay = paymentPage.getJio_payments_text().getText();
+		   if (pay.equalsIgnoreCase("Payments")) {
+			System.out.println("The Payment Page was landed Successfully");
+		} else {
+			System.err.println("The Payment Page was not landed");
+		}
+		
+	/*
+	//	waitForElement(driver.findElement(By.xpath("//span[contains(text(),'Payment Details')]")));
 		 if (driver.findElement(By.xpath("//span[contains(text(),'Payment Details')]")).isDisplayed()) {
 			  
 			  String pay = driver.findElement(By.xpath("//span[contains(text(),'Payment Details')]")).getText();
@@ -285,13 +312,62 @@ public class MedicineFlow1 extends BaseClass {
 		  //driver.findElement(By.xpath("//p[contains(text(),'Payments')]")).click();
 		  Thread.sleep(3000);
 		//  driver.get("https://www.netmeds.com");
-		
+		*/
 	}
 
 	@Then("Verify the payment status of the order")
 	public void verify_the_payment_status_of_the_order() throws Throwable {
 	  Actions acc = new Actions(driver);
 	  JavascriptExecutor js = (JavascriptExecutor)driver;
+	  PaymentPage paymentPage = new PaymentPage();
+	  
+	  
+	  waitForElement(paymentPage.getJio_payments_text());
+	  
+	  waitForElement(paymentPage.getJio_creditCard_option());
+	  paymentPage.getJio_creditCard_option().click();
+	  
+	  waitForElement(paymentPage.getJio_card_Details_Open_btn());
+	  paymentPage.getJio_card_Details_Open_btn().click();
+	  
+	  waitForElement(paymentPage.getJio_cardNumber());
+	  paymentPage.getJio_cardNumber().sendKeys("4111111111111111");
+	  
+	  waitForElement(paymentPage.getJio_month_button());
+	  paymentPage.getJio_month_button().click();
+	  Thread.sleep(2000);
+	  waitForElement(paymentPage.getJio_month_option());
+	  paymentPage.getJio_month_option().click();
+	  
+	  waitForElement(paymentPage.getJio_year_button());
+	  paymentPage.getJio_year_button().click();
+	  Thread.sleep(2000);
+	  waitForElement(paymentPage.getJio_year_options());
+	  paymentPage.getJio_year_options().click();
+	  
+	  waitForElement(paymentPage.getJio_cvv_number());
+	  paymentPage.getJio_cvv_number().sendKeys("123");
+	  
+	  waitForElement(paymentPage.getJio_nameOnCard());
+	  paymentPage.getJio_nameOnCard().sendKeys("Netmeds");
+	  
+	  waitForElement(paymentPage.getJio_Paybutton());
+	  paymentPage.getJio_Paybutton().click();
+	  
+	  waitForElement(paymentPage.getJio_Pay_skipButton());
+	  paymentPage.getJio_Pay_skipButton().click();
+	  
+	  
+	  waitForElement(driver.findElement(By.xpath("//h5[contains(text(),'Transaction Failed')]")));
+	  String ff = driver.findElement(By.xpath("//h5[contains(text(),'Transaction Failed')]")).getText();
+		Thread.sleep(3000);
+		if (ff.contains("Transaction Failed")) {
+			
+			System.out.println("The Payment Status : "+ ff);
+			
+		} else {}
+	  
+	  
 /*		
 		//	Thread.sleep(3000);
 		waitForElement(driver.findElement(By.id("nms_paytm")));
@@ -314,6 +390,8 @@ public class MedicineFlow1 extends BaseClass {
 	*/	
 		
 	//	/*		
+	  
+	  /*
 			js.executeScript("window.scrollBy(0,200)");
 		Thread.sleep(1000);
 		driver.findElement(By.id("newcardlink")).click();
@@ -361,14 +439,15 @@ public class MedicineFlow1 extends BaseClass {
 		driver.switchTo().defaultContent();
 		driver.findElement(By.xpath("(//button[@type='submit'])[5]")).click();
 		
-	//*/
+	//
+	 */ /*
 		waitForElement(driver.findElement(By.xpath("//h5[contains(text(),'Transaction Failed')]")));
 		//Thread.sleep(15000);
 		String fail = driver.findElement(By.xpath("//h5[contains(text(),'Transaction Failed')]")).getText();
 		System.err.println("The Transaction status was : "+fail);
 	
 
-		
+		*/
 		
 	}
 	

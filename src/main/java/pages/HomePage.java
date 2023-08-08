@@ -167,4 +167,55 @@ public class HomePage {
 	}
 	
 	///****************
+	
+	
+	// Limited time deal
+	
+	@FindBy(xpath = "//h2[contains(text(),' Limited Time Deals ')]")
+	private WebElement Limited_time_Deal;
+
+	public WebElement getLimited_time_Deal() {
+		return Limited_time_Deal;
+	}
+
+	public void setLimited_time_Deal(WebElement limited_time_Deal) {
+		Limited_time_Deal = limited_time_Deal;
+	}
+	
+	
+	
+	//limited time deal  -- View All Button
+	
+	@FindBy(xpath = "(//a[@class='clsviewall'])[2]")
+	private WebElement Lmd_ViewAll;
+
+	public WebElement getLmd_ViewAll() {
+		return Lmd_ViewAll;
+	}
+
+	public void setLmd_ViewAll(WebElement lmd_ViewAll) {
+		Lmd_ViewAll = lmd_ViewAll;
+	}
+	
+	
+	
+	//////	lmd add to cart button
+	
+	
+	@FindBy(id = "product-addtocart-button")
+	private WebElement Lmd_Add_to_cart;
+
+	public WebDriver getDriver() {
+		return driver;
+	}
+
+	public WebElement getLmd_Add_to_cart() {
+		return Lmd_Add_to_cart;
+	}
+	
+
+	
+	
+	
+	
 }
